@@ -176,6 +176,10 @@
 		1B6DF3552609C1630078DF34 /* planet.obj in Resources */ = {isa = PBXBuildFile; fileRef = 1B6DF3542609C1630078DF34 /* planet.obj */; };
 		1B6DF37A2609E2AA0078DF34 /* main.mtl in Resources */ = {isa = PBXBuildFile; fileRef = 1B6DF3782609E2AA0078DF34 /* main.mtl */; };
 		1B6DF37B2609E2AA0078DF34 /* main.obj in Resources */ = {isa = PBXBuildFile; fileRef = 1B6DF3792609E2AA0078DF34 /* main.obj */; };
+		1B70B3FF260B4C2900F5C724 /* orange.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B70B3FE260B4C2900F5C724 /* orange.png */; };
+		1B70B403260B50EA00F5C724 /* blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B70B402260B50EA00F5C724 /* blue.png */; };
+		1B70B406260B50F700F5C724 /* yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B70B405260B50F700F5C724 /* yellow.png */; };
+		1B70B40A260B63EA00F5C724 /* blue1.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B70B409260B63EA00F5C724 /* blue1.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -679,6 +683,10 @@
 		1B6DF3542609C1630078DF34 /* planet.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = planet.obj; sourceTree = "<group>"; };
 		1B6DF3782609E2AA0078DF34 /* main.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.mtl; sourceTree = "<group>"; };
 		1B6DF3792609E2AA0078DF34 /* main.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.obj; sourceTree = "<group>"; };
+		1B70B3FE260B4C2900F5C724 /* orange.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = orange.png; sourceTree = "<group>"; };
+		1B70B402260B50EA00F5C724 /* blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blue.png; sourceTree = "<group>"; };
+		1B70B405260B50F700F5C724 /* yellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yellow.png; sourceTree = "<group>"; };
+		1B70B409260B63EA00F5C724 /* blue1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blue1.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -725,6 +733,10 @@
 				1B6DF3162609961B0078DF34 /* Sphere.h */,
 				1B6DF3152609961B0078DF34 /* Sphere.mm */,
 				1B6DF3542609C1630078DF34 /* planet.obj */,
+				1B70B3FE260B4C2900F5C724 /* orange.png */,
+				1B70B409260B63EA00F5C724 /* blue1.png */,
+				1B70B402260B50EA00F5C724 /* blue.png */,
+				1B70B405260B50F700F5C724 /* yellow.png */,
 				1B6DF3782609E2AA0078DF34 /* main.mtl */,
 				1B6DF3792609E2AA0078DF34 /* main.obj */,
 				1B6DF34F2609C0810078DF34 /* sphere.frag */,
@@ -1406,6 +1418,7 @@
 				1B6DF28B2608C9400078DF34 /* norm.inl in Resources */,
 				1B6DF2852608C9400078DF34 /* intersect.inl in Resources */,
 				1B6DF27D2608C9400078DF34 /* matrix_factorisation.inl in Resources */,
+				1B70B3FF260B4C2900F5C724 /* orange.png in Resources */,
 				1B6DF24A2608C9400078DF34 /* round.inl in Resources */,
 				1B6DF2562608C9400078DF34 /* type_ptr.inl in Resources */,
 				1B6DF2342608C9400078DF34 /* func_trigonometric_simd.inl in Resources */,
@@ -1440,10 +1453,12 @@
 				1B6DF2152608C9400078DF34 /* scalar_relational_ext.inl in Resources */,
 				1B6DF25A2608C9400078DF34 /* associated_min_max.inl in Resources */,
 				1B6DF23F2608C9400078DF34 /* func_matrix.inl in Resources */,
+				1B70B403260B50EA00F5C724 /* blue.png in Resources */,
 				1B6DF2FD2608CA0A0078DF34 /* vector2.inl in Resources */,
 				1B6DF3012608CA0A0078DF34 /* SmoothingGroups.inl in Resources */,
 				1B6DF2882608C9400078DF34 /* common.inl in Resources */,
 				1B6DF23E2608C9400078DF34 /* type_mat4x4_simd.inl in Resources */,
+				1B70B40A260B63EA00F5C724 /* blue1.png in Resources */,
 				1B6DF28D2608C9400078DF34 /* handed_coordinate_space.inl in Resources */,
 				1B6DF34C2609BF0C0078DF34 /* glsl.frag in Resources */,
 				1B6DF2F92608CA0A0078DF34 /* color4.inl in Resources */,
@@ -1536,6 +1551,7 @@
 				1B6DF22A2608C9400078DF34 /* func_integer.inl in Resources */,
 				1B6DF2482608C9400078DF34 /* type_precision.inl in Resources */,
 				1B6DF2672608C9400078DF34 /* io.inl in Resources */,
+				1B70B406260B50F700F5C724 /* yellow.png in Resources */,
 				1B6DF2142608C9400078DF34 /* vector_relational.inl in Resources */,
 				1B6DF2332608C9400078DF34 /* type_vec4.inl in Resources */,
 				1B6DF27E2608C9400078DF34 /* type_aligned.inl in Resources */,

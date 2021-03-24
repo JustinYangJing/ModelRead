@@ -17,13 +17,13 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    Sphere *v = [[Sphere alloc] initWithFrame:CGRectMake(0, 0, 350, 350)];
-    v.center = self.view.center;
+    Sphere *v = [[Sphere alloc] initWithFrame:CGRectMake(0, 0, 250, 250)];
     [self.view addSubview:v];
+    v.center = self.view.center;
     [v setFBOAndRBO];
 //    [v showSphere];
+    
     [v showSphereModel];
-    self.view.backgroundColor = UIColor.blackColor;
 }
 
 
