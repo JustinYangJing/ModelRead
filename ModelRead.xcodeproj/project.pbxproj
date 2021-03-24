@@ -1,0 +1,1777 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1B6DF06B2608C8C90078DF34 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B6DF06A2608C8C90078DF34 /* AppDelegate.m */; };
+		1B6DF06E2608C8C90078DF34 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B6DF06D2608C8C90078DF34 /* SceneDelegate.m */; };
+		1B6DF0712608C8C90078DF34 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B6DF0702608C8C90078DF34 /* ViewController.m */; };
+		1B6DF0742608C8C90078DF34 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B6DF0722608C8C90078DF34 /* Main.storyboard */; };
+		1B6DF0762608C8CC0078DF34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B6DF0752608C8CC0078DF34 /* Assets.xcassets */; };
+		1B6DF0792608C8CC0078DF34 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B6DF0772608C8CC0078DF34 /* LaunchScreen.storyboard */; };
+		1B6DF07C2608C8CC0078DF34 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B6DF07B2608C8CC0078DF34 /* main.m */; };
+		1B6DF20B2608C9400078DF34 /* Shader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1B6DF0882608C93E0078DF34 /* Shader.cpp */; };
+		1B6DF20C2608C9400078DF34 /* CMakeLists.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1B6DF0932608C93E0078DF34 /* CMakeLists.txt */; };
+		1B6DF20D2608C9400078DF34 /* quaternion_common.inl in Resources */ = {isa = PBXBuildFile; fileRef = 1B6DF0A62608C93E0078DF34 /* quaternion_common.inl */; };
+		1B6DF20E2608C9400078DF34 /* quaternion_exponential.inl in Resources */ = {isa = PBXBuildFile; fileRef = 1B6DF0B42608C93E0078DF34 /* quaternion_exponential.inl */; };
+		1B6DF20F2608C9400078DF34 /* quaternion_transform.inl in Resources */ = {isa = PBXBuildFile; fileRef = 1B6DF0B62608C93E0078DF34 /* quaternion_transform.inl */; };
+		1B6DF2102608C9400078DF34 /* matrix_clip_space.inl in Resources */ = {isa = PBXBuildFile; fileRef = 1B6DF0B82608C93E0078DF34 /* matrix_clip_space.inl */; };
+		1B6DF2112608C9400078DF34 /* scalar_integer.inl in Resources */ = {isa = PBXBuildFile; fileRef = 1B6DF0BB2608C93E0078DF34 /* scalar_integer.inl */; };
+		1B6DF2122608C9400078DF34 /* matrix_common.inl in Resources */ = {isa = PBXBuildFile; fileRef = 1B6DF0BE2608C93E0078DF34 /* matrix_common.inl */; };
+		1B6DF2132608C9400078DF34 /* scalar_common.inl in Resources */ = {isa = PBXBuildFile; fileRef = 1B6DF0C72608C93E0078DF34 /* scalar_common.inl */; };
+		1B6DF2142608C9400078DF34 /* vector_relational.inl in Resources */ = {isa = PBXBuildFile; fileRef = 1B6DF0C92608C93E0078DF34 /* vector_relational.inl */; };
+		1B6DF2152608C9400078DF34 /* scalar_relational_ext.inl in Resources */ = {isa = PBXBuildFile; fileRef = 1B6DF0CE2608C93E0078DF34 /* scalar_relational_ext.inl */; };
+		1B6DF2162608C9400078DF34 /* quaternion_common_simd.inl in Resources */ = {isa = PBXBuildFile; fileRef = 1B6DF0E32608C93E0078DF34 /* quaternion_common_simd.inl */; };
+		1B6DF2172608C9400078DF34 /* scalar_constants.inl in Resources */ = {isa = PBXBuildFile; fileRef = 1B6DF0EC2608C93E0078DF34 /* scalar_constants.inl */; };
+		1B6DF2182608C9400078DF34 /* vector_common.inl in Resources */ = {isa = PBXBuildFile; fileRef = 1B6DF0F52608C93E0078DF34 /* vector_common.inl */; };
+		1B6DF2192608C9400078DF34 /* matrix_projection.inl in Resources */ = {isa = PBXBuildFile; fileRef = 1B6DF0FF2608C93F0078DF34 /* matrix_projection.inl */; };
+		1B6DF21A2608C9400078DF34 /* quaternion_trigonometric.inl in Resources */ = {isa = PBXBuildFile; fileRef = 1B6DF1032608C93F0078DF34 /* quaternion_trigonometric.inl */; };
+		1B6DF21B2608C9400078DF34 /* vector_ulp.inl in Resources */ = {isa = PBXBuildFile; fileRef = 1B6DF1052608C93F0078DF34 /* vector_ulp.inl */; };
+		1B6DF21C2608C9400078DF34 /* quaternion_relational.inl in Resources */ = {isa = PBXBuildFile; fileRef = 1B6DF1072608C93F0078DF34 /* quaternion_relational.inl */; };
+		1B6DF21D2608C9400078DF34 /* matrix_transform_ext.inl in Resources */ = {isa = PBXBuildFile; fileRef = 1B6DF1092608C93F0078DF34 /* matrix_transform_ext.inl */; };
+		1B6DF21E2608C9400078DF34 /* scalar_ulp.inl in Resources */ = {isa = PBXBuildFile; fileRef = 1B6DF10C2608C93F0078DF34 /* scalar_ulp.inl */; };
+		1B6DF21F2608C9400078DF34 /* quaternion_geometric.inl in Resources */ = {isa = PBXBuildFile; fileRef = 1B6DF10D2608C93F0078DF34 /* quaternion_geometric.inl */; };
+		1B6DF2202608C9400078DF34 /* vector_integer.inl in Resources */ = {isa = PBXBuildFile; fileRef = 1B6DF1112608C93F0078DF34 /* vector_integer.inl */; };
+		1B6DF2212608C9400078DF34 /* matrix_relational.inl in Resources */ = {isa = PBXBuildFile; fileRef = 1B6DF1152608C93F0078DF34 /* matrix_relational.inl */; };
+		1B6DF2222608C9400078DF34 /* func_exponential.inl in Resources */ = {isa = PBXBuildFile; fileRef = 1B6DF1282608C93F0078DF34 /* func_exponential.inl */; };
+		1B6DF2232608C9400078DF34 /* func_integer_simd.inl in Resources */ = {isa = PBXBuildFile; fileRef = 1B6DF1292608C93F0078DF34 /* func_integer_simd.inl */; };
+		1B6DF2242608C9400078DF34 /* func_vector_relational.inl in Resources */ = {isa = PBXBuildFile; fileRef = 1B6DF12A2608C93F0078DF34 /* func_vector_relational.inl */; };
+		1B6DF2252608C9400078DF34 /* func_packing.inl in Resources */ = {isa = PBXBuildFile; fileRef = 1B6DF12B2608C93F0078DF34 /* func_packing.inl */; };
+		1B6DF2262608C9400078DF34 /* type_quat.inl in Resources */ = {isa = PBXBuildFile; fileRef = 1B6DF12D2608C93F0078DF34 /* type_quat.inl */; };
+		1B6DF2272608C9400078DF34 /* type_half.inl in Resources */ = {isa = PBXBuildFile; fileRef = 1B6DF12E2608C93F0078DF34 /* type_half.inl */; };
+		1B6DF2282608C9400078DF34 /* func_vector_relational_simd.inl in Resources */ = {isa = PBXBuildFile; fileRef = 1B6DF12F2608C93F0078DF34 /* func_vector_relational_simd.inl */; };
+		1B6DF2292608C9400078DF34 /* func_matrix_simd.inl in Resources */ = {isa = PBXBuildFile; fileRef = 1B6DF1312608C93F0078DF34 /* func_matrix_simd.inl */; };
+		1B6DF22A2608C9400078DF34 /* func_integer.inl in Resources */ = {isa = PBXBuildFile; fileRef = 1B6DF1352608C93F0078DF34 /* func_integer.inl */; };
+		1B6DF22B2608C9400078DF34 /* func_geometric.inl in Resources */ = {isa = PBXBuildFile; fileRef = 1B6DF1372608C93F0078DF34 /* func_geometric.inl */; };
+		1B6DF22C2608C9400078DF34 /* func_common.inl in Resources */ = {isa = PBXBuildFile; fileRef = 1B6DF1392608C93F0078DF34 /* func_common.inl */; };
+		1B6DF22D2608C9400078DF34 /* type_quat_simd.inl in Resources */ = {isa = PBXBuildFile; fileRef = 1B6DF13A2608C93F0078DF34 /* type_quat_simd.inl */; };
+		1B6DF22E2608C9400078DF34 /* func_trigonometric.inl in Resources */ = {isa = PBXBuildFile; fileRef = 1B6DF13B2608C93F0078DF34 /* func_trigonometric.inl */; };
+		1B6DF22F2608C9400078DF34 /* type_mat2x4.inl in Resources */ = {isa = PBXBuildFile; fileRef = 1B6DF13C2608C93F0078DF34 /* type_mat2x4.inl */; };
+		1B6DF2302608C9400078DF34 /* type_mat4x2.inl in Resources */ = {isa = PBXBuildFile; fileRef = 1B6DF13D2608C93F0078DF34 /* type_mat4x2.inl */; };
+		1B6DF2312608C9400078DF34 /* type_mat4x3.inl in Resources */ = {isa = PBXBuildFile; fileRef = 1B6DF13F2608C93F0078DF34 /* type_mat4x3.inl */; };
+		1B6DF2322608C9400078DF34 /* func_packing_simd.inl in Resources */ = {isa = PBXBuildFile; fileRef = 1B6DF1402608C93F0078DF34 /* func_packing_simd.inl */; };
+		1B6DF2332608C9400078DF34 /* type_vec4.inl in Resources */ = {isa = PBXBuildFile; fileRef = 1B6DF1412608C93F0078DF34 /* type_vec4.inl */; };
+		1B6DF2342608C9400078DF34 /* func_trigonometric_simd.inl in Resources */ = {isa = PBXBuildFile; fileRef = 1B6DF1422608C93F0078DF34 /* func_trigonometric_simd.inl */; };
+		1B6DF2352608C9400078DF34 /* type_mat2x2.inl in Resources */ = {isa = PBXBuildFile; fileRef = 1B6DF1472608C93F0078DF34 /* type_mat2x2.inl */; };
+		1B6DF2362608C9400078DF34 /* type_vec1.inl in Resources */ = {isa = PBXBuildFile; fileRef = 1B6DF1482608C93F0078DF34 /* type_vec1.inl */; };
+		1B6DF2372608C9400078DF34 /* func_common_simd.inl in Resources */ = {isa = PBXBuildFile; fileRef = 1B6DF1492608C93F0078DF34 /* func_common_simd.inl */; };
+		1B6DF2382608C9400078DF34 /* type_mat4x4.inl in Resources */ = {isa = PBXBuildFile; fileRef = 1B6DF14A2608C93F0078DF34 /* type_mat4x4.inl */; };
+		1B6DF2392608C9400078DF34 /* func_geometric_simd.inl in Resources */ = {isa = PBXBuildFile; fileRef = 1B6DF14B2608C93F0078DF34 /* func_geometric_simd.inl */; };
+		1B6DF23A2608C9400078DF34 /* type_mat2x3.inl in Resources */ = {isa = PBXBuildFile; fileRef = 1B6DF14C2608C93F0078DF34 /* type_mat2x3.inl */; };
+		1B6DF23B2608C9400078DF34 /* type_vec2.inl in Resources */ = {isa = PBXBuildFile; fileRef = 1B6DF14D2608C93F0078DF34 /* type_vec2.inl */; };
+		1B6DF23C2608C9400078DF34 /* glm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1B6DF14E2608C93F0078DF34 /* glm.cpp */; };
+		1B6DF23D2608C9400078DF34 /* type_vec3.inl in Resources */ = {isa = PBXBuildFile; fileRef = 1B6DF1502608C93F0078DF34 /* type_vec3.inl */; };
+		1B6DF23E2608C9400078DF34 /* type_mat4x4_simd.inl in Resources */ = {isa = PBXBuildFile; fileRef = 1B6DF1512608C93F0078DF34 /* type_mat4x4_simd.inl */; };
+		1B6DF23F2608C9400078DF34 /* func_matrix.inl in Resources */ = {isa = PBXBuildFile; fileRef = 1B6DF1542608C93F0078DF34 /* func_matrix.inl */; };
+		1B6DF2402608C9400078DF34 /* type_vec4_simd.inl in Resources */ = {isa = PBXBuildFile; fileRef = 1B6DF15A2608C93F0078DF34 /* type_vec4_simd.inl */; };
+		1B6DF2412608C9400078DF34 /* type_mat3x4.inl in Resources */ = {isa = PBXBuildFile; fileRef = 1B6DF15B2608C93F0078DF34 /* type_mat3x4.inl */; };
+		1B6DF2422608C9400078DF34 /* func_exponential_simd.inl in Resources */ = {isa = PBXBuildFile; fileRef = 1B6DF15C2608C93F0078DF34 /* func_exponential_simd.inl */; };
+		1B6DF2432608C9400078DF34 /* type_mat3x2.inl in Resources */ = {isa = PBXBuildFile; fileRef = 1B6DF1622608C93F0078DF34 /* type_mat3x2.inl */; };
+		1B6DF2442608C9400078DF34 /* type_mat3x3.inl in Resources */ = {isa = PBXBuildFile; fileRef = 1B6DF1632608C93F0078DF34 /* type_mat3x3.inl */; };
+		1B6DF2452608C9400078DF34 /* color_space_gtc.inl in Resources */ = {isa = PBXBuildFile; fileRef = 1B6DF1672608C93F0078DF34 /* color_space_gtc.inl */; };
+		1B6DF2462608C9400078DF34 /* matrix_inverse.inl in Resources */ = {isa = PBXBuildFile; fileRef = 1B6DF16A2608C93F0078DF34 /* matrix_inverse.inl */; };
+		1B6DF2472608C9400078DF34 /* packing.inl in Resources */ = {isa = PBXBuildFile; fileRef = 1B6DF16B2608C93F0078DF34 /* packing.inl */; };
+		1B6DF2482608C9400078DF34 /* type_precision.inl in Resources */ = {isa = PBXBuildFile; fileRef = 1B6DF16D2608C93F0078DF34 /* type_precision.inl */; };
+		1B6DF2492608C9400078DF34 /* bitfield.inl in Resources */ = {isa = PBXBuildFile; fileRef = 1B6DF16E2608C93F0078DF34 /* bitfield.inl */; };
+		1B6DF24A2608C9400078DF34 /* round.inl in Resources */ = {isa = PBXBuildFile; fileRef = 1B6DF1702608C93F0078DF34 /* round.inl */; };
+		1B6DF24B2608C9400078DF34 /* quaternion_simd.inl in Resources */ = {isa = PBXBuildFile; fileRef = 1B6DF1722608C93F0078DF34 /* quaternion_simd.inl */; };
+		1B6DF24C2608C9400078DF34 /* ulp.inl in Resources */ = {isa = PBXBuildFile; fileRef = 1B6DF1732608C93F0078DF34 /* ulp.inl */; };
+		1B6DF24D2608C9400078DF34 /* epsilon.inl in Resources */ = {isa = PBXBuildFile; fileRef = 1B6DF17A2608C93F0078DF34 /* epsilon.inl */; };
+		1B6DF24E2608C9400078DF34 /* integer_gtc.inl in Resources */ = {isa = PBXBuildFile; fileRef = 1B6DF17C2608C93F0078DF34 /* integer_gtc.inl */; };
+		1B6DF24F2608C9400078DF34 /* matrix_access.inl in Resources */ = {isa = PBXBuildFile; fileRef = 1B6DF17D2608C93F0078DF34 /* matrix_access.inl */; };
+		1B6DF2502608C9400078DF34 /* reciprocal.inl in Resources */ = {isa = PBXBuildFile; fileRef = 1B6DF17F2608C93F0078DF34 /* reciprocal.inl */; };
+		1B6DF2512608C9400078DF34 /* quaternion_gtc.inl in Resources */ = {isa = PBXBuildFile; fileRef = 1B6DF1822608C93F0078DF34 /* quaternion_gtc.inl */; };
+		1B6DF2522608C9400078DF34 /* matrix_transform_gtc.inl in Resources */ = {isa = PBXBuildFile; fileRef = 1B6DF1842608C93F0078DF34 /* matrix_transform_gtc.inl */; };
+		1B6DF2532608C9400078DF34 /* noise.inl in Resources */ = {isa = PBXBuildFile; fileRef = 1B6DF1852608C93F0078DF34 /* noise.inl */; };
+		1B6DF2542608C9400078DF34 /* random.inl in Resources */ = {isa = PBXBuildFile; fileRef = 1B6DF1872608C93F0078DF34 /* random.inl */; };
+		1B6DF2552608C9400078DF34 /* constants.inl in Resources */ = {isa = PBXBuildFile; fileRef = 1B6DF1892608C93F0078DF34 /* constants.inl */; };
+		1B6DF2562608C9400078DF34 /* type_ptr.inl in Resources */ = {isa = PBXBuildFile; fileRef = 1B6DF18B2608C93F0078DF34 /* type_ptr.inl */; };
+		1B6DF2572608C9400078DF34 /* log_base.inl in Resources */ = {isa = PBXBuildFile; fileRef = 1B6DF1902608C93F0078DF34 /* log_base.inl */; };
+		1B6DF2582608C9400078DF34 /* matrix_query.inl in Resources */ = {isa = PBXBuildFile; fileRef = 1B6DF1912608C93F0078DF34 /* matrix_query.inl */; };
+		1B6DF2592608C9400078DF34 /* extend.inl in Resources */ = {isa = PBXBuildFile; fileRef = 1B6DF1922608C93F0078DF34 /* extend.inl */; };
+		1B6DF25A2608C9400078DF34 /* associated_min_max.inl in Resources */ = {isa = PBXBuildFile; fileRef = 1B6DF1942608C93F0078DF34 /* associated_min_max.inl */; };
+		1B6DF25B2608C9400078DF34 /* matrix_transform_2d.inl in Resources */ = {isa = PBXBuildFile; fileRef = 1B6DF1952608C93F0078DF34 /* matrix_transform_2d.inl */; };
+		1B6DF25C2608C9400078DF34 /* exterior_product.inl in Resources */ = {isa = PBXBuildFile; fileRef = 1B6DF19A2608C93F0078DF34 /* exterior_product.inl */; };
+		1B6DF25D2608C9400078DF34 /* gradient_paint.inl in Resources */ = {isa = PBXBuildFile; fileRef = 1B6DF19B2608C93F0078DF34 /* gradient_paint.inl */; };
+		1B6DF25E2608C9400078DF34 /* type_trait.inl in Resources */ = {isa = PBXBuildFile; fileRef = 1B6DF19E2608C93F0078DF34 /* type_trait.inl */; };
+		1B6DF25F2608C9400078DF34 /* euler_angles.inl in Resources */ = {isa = PBXBuildFile; fileRef = 1B6DF1A02608C93F0078DF34 /* euler_angles.inl */; };
+		1B6DF2602608C9400078DF34 /* raw_data.inl in Resources */ = {isa = PBXBuildFile; fileRef = 1B6DF1A22608C93F0078DF34 /* raw_data.inl */; };
+		1B6DF2612608C9400078DF34 /* matrix_cross_product.inl in Resources */ = {isa = PBXBuildFile; fileRef = 1B6DF1A32608C93F0078DF34 /* matrix_cross_product.inl */; };
+		1B6DF2622608C9400078DF34 /* optimum_pow.inl in Resources */ = {isa = PBXBuildFile; fileRef = 1B6DF1A62608C93F0078DF34 /* optimum_pow.inl */; };
+		1B6DF2632608C9400078DF34 /* number_precision.inl in Resources */ = {isa = PBXBuildFile; fileRef = 1B6DF1A92608C9400078DF34 /* number_precision.inl */; };
+		1B6DF2642608C9400078DF34 /* mixed_product.inl in Resources */ = {isa = PBXBuildFile; fileRef = 1B6DF1AA2608C9400078DF34 /* mixed_product.inl */; };
+		1B6DF2652608C9400078DF34 /* transform.inl in Resources */ = {isa = PBXBuildFile; fileRef = 1B6DF1AB2608C9400078DF34 /* transform.inl */; };
+		1B6DF2662608C9400078DF34 /* bit.inl in Resources */ = {isa = PBXBuildFile; fileRef = 1B6DF1AC2608C9400078DF34 /* bit.inl */; };
+		1B6DF2672608C9400078DF34 /* io.inl in Resources */ = {isa = PBXBuildFile; fileRef = 1B6DF1AD2608C9400078DF34 /* io.inl */; };
+		1B6DF2682608C9400078DF34 /* fast_trigonometry.inl in Resources */ = {isa = PBXBuildFile; fileRef = 1B6DF1AE2608C9400078DF34 /* fast_trigonometry.inl */; };
+		1B6DF2692608C9400078DF34 /* spline.inl in Resources */ = {isa = PBXBuildFile; fileRef = 1B6DF1B02608C9400078DF34 /* spline.inl */; };
+		1B6DF26A2608C9400078DF34 /* fast_square_root.inl in Resources */ = {isa = PBXBuildFile; fileRef = 1B6DF1B42608C9400078DF34 /* fast_square_root.inl */; };
+		1B6DF26B2608C9400078DF34 /* color_space_YCoCg.inl in Resources */ = {isa = PBXBuildFile; fileRef = 1B6DF1B52608C9400078DF34 /* color_space_YCoCg.inl */; };
+		1B6DF26C2608C9400078DF34 /* extended_min_max.inl in Resources */ = {isa = PBXBuildFile; fileRef = 1B6DF1B72608C9400078DF34 /* extended_min_max.inl */; };
+		1B6DF26D2608C9400078DF34 /* float_notmalize.inl in Resources */ = {isa = PBXBuildFile; fileRef = 1B6DF1B92608C9400078DF34 /* float_notmalize.inl */; };
+		1B6DF26E2608C9400078DF34 /* closest_point.inl in Resources */ = {isa = PBXBuildFile; fileRef = 1B6DF1BE2608C9400078DF34 /* closest_point.inl */; };
+		1B6DF26F2608C9400078DF34 /* quaternion_gtx.inl in Resources */ = {isa = PBXBuildFile; fileRef = 1B6DF1BF2608C9400078DF34 /* quaternion_gtx.inl */; };
+		1B6DF2702608C9400078DF34 /* dual_quaternion.inl in Resources */ = {isa = PBXBuildFile; fileRef = 1B6DF1C02608C9400078DF34 /* dual_quaternion.inl */; };
+		1B6DF2712608C9400078DF34 /* vector_angle.inl in Resources */ = {isa = PBXBuildFile; fileRef = 1B6DF1C52608C9400078DF34 /* vector_angle.inl */; };
+		1B6DF2722608C9400078DF34 /* string_cast.inl in Resources */ = {isa = PBXBuildFile; fileRef = 1B6DF1CA2608C9400078DF34 /* string_cast.inl */; };
+		1B6DF2732608C9400078DF34 /* functions.inl in Resources */ = {isa = PBXBuildFile; fileRef = 1B6DF1CB2608C9400078DF34 /* functions.inl */; };
+		1B6DF2742608C9400078DF34 /* rotate_vector.inl in Resources */ = {isa = PBXBuildFile; fileRef = 1B6DF1CC2608C9400078DF34 /* rotate_vector.inl */; };
+		1B6DF2752608C9400078DF34 /* matrix_interpolation.inl in Resources */ = {isa = PBXBuildFile; fileRef = 1B6DF1CD2608C9400078DF34 /* matrix_interpolation.inl */; };
+		1B6DF2762608C9400078DF34 /* integer_gtx.inl in Resources */ = {isa = PBXBuildFile; fileRef = 1B6DF1CE2608C9400078DF34 /* integer_gtx.inl */; };
+		1B6DF2772608C9400078DF34 /* hash.inl in Resources */ = {isa = PBXBuildFile; fileRef = 1B6DF1CF2608C9400078DF34 /* hash.inl */; };
+		1B6DF2782608C9400078DF34 /* vector_query.inl in Resources */ = {isa = PBXBuildFile; fileRef = 1B6DF1D02608C9400078DF34 /* vector_query.inl */; };
+		1B6DF2792608C9400078DF34 /* orthonormalize.inl in Resources */ = {isa = PBXBuildFile; fileRef = 1B6DF1D22608C9400078DF34 /* orthonormalize.inl */; };
+		1B6DF27A2608C9400078DF34 /* component_wise.inl in Resources */ = {isa = PBXBuildFile; fileRef = 1B6DF1D32608C9400078DF34 /* component_wise.inl */; };
+		1B6DF27B2608C9400078DF34 /* normalize_dot.inl in Resources */ = {isa = PBXBuildFile; fileRef = 1B6DF1D42608C9400078DF34 /* normalize_dot.inl */; };
+		1B6DF27C2608C9400078DF34 /* std_based_type.inl in Resources */ = {isa = PBXBuildFile; fileRef = 1B6DF1D52608C9400078DF34 /* std_based_type.inl */; };
+		1B6DF27D2608C9400078DF34 /* matrix_factorisation.inl in Resources */ = {isa = PBXBuildFile; fileRef = 1B6DF1D62608C9400078DF34 /* matrix_factorisation.inl */; };
+		1B6DF27E2608C9400078DF34 /* type_aligned.inl in Resources */ = {isa = PBXBuildFile; fileRef = 1B6DF1D72608C9400078DF34 /* type_aligned.inl */; };
+		1B6DF27F2608C9400078DF34 /* compatibility.inl in Resources */ = {isa = PBXBuildFile; fileRef = 1B6DF1DA2608C9400078DF34 /* compatibility.inl */; };
+		1B6DF2802608C9400078DF34 /* scalar_relational_gtx.inl in Resources */ = {isa = PBXBuildFile; fileRef = 1B6DF1DD2608C9400078DF34 /* scalar_relational_gtx.inl */; };
+		1B6DF2812608C9400078DF34 /* rotate_normalized_axis.inl in Resources */ = {isa = PBXBuildFile; fileRef = 1B6DF1DE2608C9400078DF34 /* rotate_normalized_axis.inl */; };
+		1B6DF2822608C9400078DF34 /* color_encoding.inl in Resources */ = {isa = PBXBuildFile; fileRef = 1B6DF1E02608C9400078DF34 /* color_encoding.inl */; };
+		1B6DF2832608C9400078DF34 /* matrix_major_storage.inl in Resources */ = {isa = PBXBuildFile; fileRef = 1B6DF1E22608C9400078DF34 /* matrix_major_storage.inl */; };
+		1B6DF2842608C9400078DF34 /* matrix_operation.inl in Resources */ = {isa = PBXBuildFile; fileRef = 1B6DF1E32608C9400078DF34 /* matrix_operation.inl */; };
+		1B6DF2852608C9400078DF34 /* intersect.inl in Resources */ = {isa = PBXBuildFile; fileRef = 1B6DF1E62608C9400078DF34 /* intersect.inl */; };
+		1B6DF2862608C9400078DF34 /* perpendicular.inl in Resources */ = {isa = PBXBuildFile; fileRef = 1B6DF1E72608C9400078DF34 /* perpendicular.inl */; };
+		1B6DF2872608C9400078DF34 /* transform2.inl in Resources */ = {isa = PBXBuildFile; fileRef = 1B6DF1E92608C9400078DF34 /* transform2.inl */; };
+		1B6DF2882608C9400078DF34 /* common.inl in Resources */ = {isa = PBXBuildFile; fileRef = 1B6DF1EC2608C9400078DF34 /* common.inl */; };
+		1B6DF2892608C9400078DF34 /* easing.inl in Resources */ = {isa = PBXBuildFile; fileRef = 1B6DF1F02608C9400078DF34 /* easing.inl */; };
+		1B6DF28A2608C9400078DF34 /* normal.inl in Resources */ = {isa = PBXBuildFile; fileRef = 1B6DF1F22608C9400078DF34 /* normal.inl */; };
+		1B6DF28B2608C9400078DF34 /* norm.inl in Resources */ = {isa = PBXBuildFile; fileRef = 1B6DF1F52608C9400078DF34 /* norm.inl */; };
+		1B6DF28C2608C9400078DF34 /* texture.inl in Resources */ = {isa = PBXBuildFile; fileRef = 1B6DF1F62608C9400078DF34 /* texture.inl */; };
+		1B6DF28D2608C9400078DF34 /* handed_coordinate_space.inl in Resources */ = {isa = PBXBuildFile; fileRef = 1B6DF1F72608C9400078DF34 /* handed_coordinate_space.inl */; };
+		1B6DF28E2608C9400078DF34 /* fast_exponential.inl in Resources */ = {isa = PBXBuildFile; fileRef = 1B6DF1FA2608C9400078DF34 /* fast_exponential.inl */; };
+		1B6DF28F2608C9400078DF34 /* matrix_decompose.inl in Resources */ = {isa = PBXBuildFile; fileRef = 1B6DF1FC2608C9400078DF34 /* matrix_decompose.inl */; };
+		1B6DF2902608C9400078DF34 /* polar_coordinates.inl in Resources */ = {isa = PBXBuildFile; fileRef = 1B6DF2032608C9400078DF34 /* polar_coordinates.inl */; };
+		1B6DF2912608C9410078DF34 /* wrap.inl in Resources */ = {isa = PBXBuildFile; fileRef = 1B6DF2052608C9400078DF34 /* wrap.inl */; };
+		1B6DF2922608C9410078DF34 /* color_space_gtx.inl in Resources */ = {isa = PBXBuildFile; fileRef = 1B6DF2082608C9400078DF34 /* color_space_gtx.inl */; };
+		1B6DF2932608C9410078DF34 /* projection.inl in Resources */ = {isa = PBXBuildFile; fileRef = 1B6DF2092608C9400078DF34 /* projection.inl */; };
+		1B6DF29A2608C9F80078DF34 /* libzlibstatic-fat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B6DF2972608C9E80078DF34 /* libzlibstatic-fat.a */; };
+		1B6DF29B2608C9F80078DF34 /* libIrrXML-fat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B6DF2982608C9E80078DF34 /* libIrrXML-fat.a */; };
+		1B6DF29C2608C9F80078DF34 /* libassimp-fat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B6DF2992608C9F80078DF34 /* libassimp-fat.a */; };
+		1B6DF2F82608CA0A0078DF34 /* quaternion.inl in Resources */ = {isa = PBXBuildFile; fileRef = 1B6DF2A52608CA0A0078DF34 /* quaternion.inl */; };
+		1B6DF2F92608CA0A0078DF34 /* color4.inl in Resources */ = {isa = PBXBuildFile; fileRef = 1B6DF2BA2608CA0A0078DF34 /* color4.inl */; };
+		1B6DF2FA2608CA0A0078DF34 /* config.h.in in Resources */ = {isa = PBXBuildFile; fileRef = 1B6DF2C52608CA0A0078DF34 /* config.h.in */; };
+		1B6DF2FB2608CA0A0078DF34 /* material.inl in Resources */ = {isa = PBXBuildFile; fileRef = 1B6DF2C72608CA0A0078DF34 /* material.inl */; };
+		1B6DF2FC2608CA0A0078DF34 /* .editorconfig in Resources */ = {isa = PBXBuildFile; fileRef = 1B6DF2CD2608CA0A0078DF34 /* .editorconfig */; };
+		1B6DF2FD2608CA0A0078DF34 /* vector2.inl in Resources */ = {isa = PBXBuildFile; fileRef = 1B6DF2D12608CA0A0078DF34 /* vector2.inl */; };
+		1B6DF2FE2608CA0A0078DF34 /* matrix4x4.inl in Resources */ = {isa = PBXBuildFile; fileRef = 1B6DF2D22608CA0A0078DF34 /* matrix4x4.inl */; };
+		1B6DF2FF2608CA0A0078DF34 /* vector3.inl in Resources */ = {isa = PBXBuildFile; fileRef = 1B6DF2D32608CA0A0078DF34 /* vector3.inl */; };
+		1B6DF3002608CA0A0078DF34 /* matrix3x3.inl in Resources */ = {isa = PBXBuildFile; fileRef = 1B6DF2E22608CA0A0078DF34 /* matrix3x3.inl */; };
+		1B6DF3012608CA0A0078DF34 /* SmoothingGroups.inl in Resources */ = {isa = PBXBuildFile; fileRef = 1B6DF2F32608CA0A0078DF34 /* SmoothingGroups.inl */; };
+		1B6DF3082608CA370078DF34 /* Mesh.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1B6DF3042608CA360078DF34 /* Mesh.cpp */; };
+		1B6DF3092608CA370078DF34 /* Model.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1B6DF3062608CA370078DF34 /* Model.cpp */; };
+		1B6DF30E2608CB1A0078DF34 /* stb_image.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1B6DF30C2608CB1A0078DF34 /* stb_image.cpp */; };
+		1B6DF313260992BE0078DF34 /* Camera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1B6DF312260992BE0078DF34 /* Camera.cpp */; };
+		1B6DF3172609961C0078DF34 /* Sphere.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1B6DF3152609961B0078DF34 /* Sphere.mm */; };
+		1B6DF34C2609BF0C0078DF34 /* glsl.frag in Resources */ = {isa = PBXBuildFile; fileRef = 1B6DF34A2609BF0C0078DF34 /* glsl.frag */; };
+		1B6DF34D2609BF0C0078DF34 /* glsl.vert in Resources */ = {isa = PBXBuildFile; fileRef = 1B6DF34B2609BF0C0078DF34 /* glsl.vert */; };
+		1B6DF3512609C0810078DF34 /* sphere.frag in Resources */ = {isa = PBXBuildFile; fileRef = 1B6DF34F2609C0810078DF34 /* sphere.frag */; };
+		1B6DF3522609C0810078DF34 /* sphere.vert in Resources */ = {isa = PBXBuildFile; fileRef = 1B6DF3502609C0810078DF34 /* sphere.vert */; };
+		1B6DF3552609C1630078DF34 /* planet.obj in Resources */ = {isa = PBXBuildFile; fileRef = 1B6DF3542609C1630078DF34 /* planet.obj */; };
+		1B6DF37A2609E2AA0078DF34 /* main.mtl in Resources */ = {isa = PBXBuildFile; fileRef = 1B6DF3782609E2AA0078DF34 /* main.mtl */; };
+		1B6DF37B2609E2AA0078DF34 /* main.obj in Resources */ = {isa = PBXBuildFile; fileRef = 1B6DF3792609E2AA0078DF34 /* main.obj */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1B6DF0662608C8C90078DF34 /* ModelRead.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ModelRead.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B6DF0692608C8C90078DF34 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1B6DF06A2608C8C90078DF34 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1B6DF06C2608C8C90078DF34 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		1B6DF06D2608C8C90078DF34 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		1B6DF06F2608C8C90078DF34 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		1B6DF0702608C8C90078DF34 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		1B6DF0732608C8C90078DF34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1B6DF0752608C8CC0078DF34 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1B6DF0782608C8CC0078DF34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1B6DF07A2608C8CC0078DF34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B6DF07B2608C8CC0078DF34 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1B6DF0882608C93E0078DF34 /* Shader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Shader.cpp; sourceTree = "<group>"; };
+		1B6DF0892608C93E0078DF34 /* Shader.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Shader.hpp; sourceTree = "<group>"; };
+		1B6DF08B2608C93E0078DF34 /* vec4.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = vec4.hpp; sourceTree = "<group>"; };
+		1B6DF08C2608C93E0078DF34 /* integer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = integer.hpp; sourceTree = "<group>"; };
+		1B6DF08D2608C93E0078DF34 /* vector_relational.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = vector_relational.hpp; sourceTree = "<group>"; };
+		1B6DF08E2608C93E0078DF34 /* mat2x3.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = mat2x3.hpp; sourceTree = "<group>"; };
+		1B6DF08F2608C93E0078DF34 /* mat4x4.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = mat4x4.hpp; sourceTree = "<group>"; };
+		1B6DF0902608C93E0078DF34 /* mat2x2.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = mat2x2.hpp; sourceTree = "<group>"; };
+		1B6DF0912608C93E0078DF34 /* exponential.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = exponential.hpp; sourceTree = "<group>"; };
+		1B6DF0922608C93E0078DF34 /* vec2.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = vec2.hpp; sourceTree = "<group>"; };
+		1B6DF0932608C93E0078DF34 /* CMakeLists.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = "<group>"; };
+		1B6DF0942608C93E0078DF34 /* vec3.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = vec3.hpp; sourceTree = "<group>"; };
+		1B6DF0952608C93E0078DF34 /* fwd.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = fwd.hpp; sourceTree = "<group>"; };
+		1B6DF0962608C93E0078DF34 /* mat4x3.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = mat4x3.hpp; sourceTree = "<group>"; };
+		1B6DF0972608C93E0078DF34 /* mat4x2.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = mat4x2.hpp; sourceTree = "<group>"; };
+		1B6DF0982608C93E0078DF34 /* mat2x4.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = mat2x4.hpp; sourceTree = "<group>"; };
+		1B6DF0992608C93E0078DF34 /* packing.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = packing.hpp; sourceTree = "<group>"; };
+		1B6DF09A2608C93E0078DF34 /* mat3x3.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = mat3x3.hpp; sourceTree = "<group>"; };
+		1B6DF09B2608C93E0078DF34 /* mat3x2.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = mat3x2.hpp; sourceTree = "<group>"; };
+		1B6DF09D2608C93E0078DF34 /* matrix_double3x2_precision.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = matrix_double3x2_precision.hpp; sourceTree = "<group>"; };
+		1B6DF09E2608C93E0078DF34 /* matrix_float2x4.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = matrix_float2x4.hpp; sourceTree = "<group>"; };
+		1B6DF09F2608C93E0078DF34 /* vector_bool2.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = vector_bool2.hpp; sourceTree = "<group>"; };
+		1B6DF0A02608C93E0078DF34 /* quaternion_double_precision.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = quaternion_double_precision.hpp; sourceTree = "<group>"; };
+		1B6DF0A12608C93E0078DF34 /* matrix_float4x2.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = matrix_float4x2.hpp; sourceTree = "<group>"; };
+		1B6DF0A22608C93E0078DF34 /* matrix_float4x3.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = matrix_float4x3.hpp; sourceTree = "<group>"; };
+		1B6DF0A32608C93E0078DF34 /* vector_bool3.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = vector_bool3.hpp; sourceTree = "<group>"; };
+		1B6DF0A42608C93E0078DF34 /* vector_relational.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = vector_relational.hpp; sourceTree = "<group>"; };
+		1B6DF0A52608C93E0078DF34 /* vector_bool1.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = vector_bool1.hpp; sourceTree = "<group>"; };
+		1B6DF0A62608C93E0078DF34 /* quaternion_common.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = quaternion_common.inl; sourceTree = "<group>"; };
+		1B6DF0A72608C93E0078DF34 /* vector_uint2_precision.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = vector_uint2_precision.hpp; sourceTree = "<group>"; };
+		1B6DF0A82608C93E0078DF34 /* vector_float1_precision.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = vector_float1_precision.hpp; sourceTree = "<group>"; };
+		1B6DF0A92608C93E0078DF34 /* matrix_float2x3_precision.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = matrix_float2x3_precision.hpp; sourceTree = "<group>"; };
+		1B6DF0AA2608C93E0078DF34 /* matrix_float2x2.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = matrix_float2x2.hpp; sourceTree = "<group>"; };
+		1B6DF0AB2608C93E0078DF34 /* matrix_common.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = matrix_common.hpp; sourceTree = "<group>"; };
+		1B6DF0AC2608C93E0078DF34 /* vector_bool4.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = vector_bool4.hpp; sourceTree = "<group>"; };
+		1B6DF0AD2608C93E0078DF34 /* matrix_float2x4_precision.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = matrix_float2x4_precision.hpp; sourceTree = "<group>"; };
+		1B6DF0AE2608C93E0078DF34 /* matrix_float4x4.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = matrix_float4x4.hpp; sourceTree = "<group>"; };
+		1B6DF0AF2608C93E0078DF34 /* vector_uint1_precision.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = vector_uint1_precision.hpp; sourceTree = "<group>"; };
+		1B6DF0B02608C93E0078DF34 /* matrix_float2x3.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = matrix_float2x3.hpp; sourceTree = "<group>"; };
+		1B6DF0B12608C93E0078DF34 /* matrix_clip_space.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = matrix_clip_space.hpp; sourceTree = "<group>"; };
+		1B6DF0B22608C93E0078DF34 /* scalar_integer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = scalar_integer.hpp; sourceTree = "<group>"; };
+		1B6DF0B32608C93E0078DF34 /* vector_float2_precision.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = vector_float2_precision.hpp; sourceTree = "<group>"; };
+		1B6DF0B42608C93E0078DF34 /* quaternion_exponential.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = quaternion_exponential.inl; sourceTree = "<group>"; };
+		1B6DF0B52608C93E0078DF34 /* scalar_common.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = scalar_common.hpp; sourceTree = "<group>"; };
+		1B6DF0B62608C93E0078DF34 /* quaternion_transform.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = quaternion_transform.inl; sourceTree = "<group>"; };
+		1B6DF0B72608C93E0078DF34 /* matrix_double4x2_precision.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = matrix_double4x2_precision.hpp; sourceTree = "<group>"; };
+		1B6DF0B82608C93E0078DF34 /* matrix_clip_space.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = matrix_clip_space.inl; sourceTree = "<group>"; };
+		1B6DF0B92608C93E0078DF34 /* vector_double4_precision.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = vector_double4_precision.hpp; sourceTree = "<group>"; };
+		1B6DF0BA2608C93E0078DF34 /* matrix_float3x4_precision.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = matrix_float3x4_precision.hpp; sourceTree = "<group>"; };
+		1B6DF0BB2608C93E0078DF34 /* scalar_integer.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = scalar_integer.inl; sourceTree = "<group>"; };
+		1B6DF0BC2608C93E0078DF34 /* vector_uint3.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = vector_uint3.hpp; sourceTree = "<group>"; };
+		1B6DF0BD2608C93E0078DF34 /* matrix_float4x3_precision.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = matrix_float4x3_precision.hpp; sourceTree = "<group>"; };
+		1B6DF0BE2608C93E0078DF34 /* matrix_common.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = matrix_common.inl; sourceTree = "<group>"; };
+		1B6DF0BF2608C93E0078DF34 /* vector_uint2.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = vector_uint2.hpp; sourceTree = "<group>"; };
+		1B6DF0C02608C93E0078DF34 /* quaternion_float_precision.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = quaternion_float_precision.hpp; sourceTree = "<group>"; };
+		1B6DF0C12608C93E0078DF34 /* vector_int1_precision.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = vector_int1_precision.hpp; sourceTree = "<group>"; };
+		1B6DF0C22608C93E0078DF34 /* matrix_float3x4.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = matrix_float3x4.hpp; sourceTree = "<group>"; };
+		1B6DF0C32608C93E0078DF34 /* quaternion_transform.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = quaternion_transform.hpp; sourceTree = "<group>"; };
+		1B6DF0C42608C93E0078DF34 /* vector_bool4_precision.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = vector_bool4_precision.hpp; sourceTree = "<group>"; };
+		1B6DF0C52608C93E0078DF34 /* vector_uint1.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = vector_uint1.hpp; sourceTree = "<group>"; };
+		1B6DF0C62608C93E0078DF34 /* matrix_transform.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = matrix_transform.hpp; sourceTree = "<group>"; };
+		1B6DF0C72608C93E0078DF34 /* scalar_common.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = scalar_common.inl; sourceTree = "<group>"; };
+		1B6DF0C82608C93E0078DF34 /* quaternion_exponential.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = quaternion_exponential.hpp; sourceTree = "<group>"; };
+		1B6DF0C92608C93E0078DF34 /* vector_relational.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = vector_relational.inl; sourceTree = "<group>"; };
+		1B6DF0CA2608C93E0078DF34 /* vector_bool3_precision.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = vector_bool3_precision.hpp; sourceTree = "<group>"; };
+		1B6DF0CB2608C93E0078DF34 /* matrix_double2x2_precision.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = matrix_double2x2_precision.hpp; sourceTree = "<group>"; };
+		1B6DF0CC2608C93E0078DF34 /* quaternion_float.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = quaternion_float.hpp; sourceTree = "<group>"; };
+		1B6DF0CD2608C93E0078DF34 /* vector_int2_precision.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = vector_int2_precision.hpp; sourceTree = "<group>"; };
+		1B6DF0CE2608C93E0078DF34 /* scalar_relational_ext.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = scalar_relational_ext.inl; sourceTree = "<group>"; };
+		1B6DF0CF2608C93E0078DF34 /* vector_uint4.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = vector_uint4.hpp; sourceTree = "<group>"; };
+		1B6DF0D02608C93E0078DF34 /* matrix_float3x2.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = matrix_float3x2.hpp; sourceTree = "<group>"; };
+		1B6DF0D12608C93E0078DF34 /* vector_double3_precision.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = vector_double3_precision.hpp; sourceTree = "<group>"; };
+		1B6DF0D22608C93E0078DF34 /* quaternion_common.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = quaternion_common.hpp; sourceTree = "<group>"; };
+		1B6DF0D32608C93E0078DF34 /* matrix_float3x3_precision.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = matrix_float3x3_precision.hpp; sourceTree = "<group>"; };
+		1B6DF0D42608C93E0078DF34 /* matrix_float3x3.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = matrix_float3x3.hpp; sourceTree = "<group>"; };
+		1B6DF0D52608C93E0078DF34 /* scalar_int_sized.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = scalar_int_sized.hpp; sourceTree = "<group>"; };
+		1B6DF0D62608C93E0078DF34 /* matrix_float4x4_precision.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = matrix_float4x4_precision.hpp; sourceTree = "<group>"; };
+		1B6DF0D72608C93E0078DF34 /* matrix_double4x2.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = matrix_double4x2.hpp; sourceTree = "<group>"; };
+		1B6DF0D82608C93E0078DF34 /* vector_int1.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = vector_int1.hpp; sourceTree = "<group>"; };
+		1B6DF0D92608C93E0078DF34 /* vector_float3.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = vector_float3.hpp; sourceTree = "<group>"; };
+		1B6DF0DA2608C93E0078DF34 /* matrix_double2x4.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = matrix_double2x4.hpp; sourceTree = "<group>"; };
+		1B6DF0DB2608C93E0078DF34 /* scalar_ulp.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = scalar_ulp.hpp; sourceTree = "<group>"; };
+		1B6DF0DC2608C93E0078DF34 /* quaternion_geometric.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = quaternion_geometric.hpp; sourceTree = "<group>"; };
+		1B6DF0DD2608C93E0078DF34 /* vector_int3_precision.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = vector_int3_precision.hpp; sourceTree = "<group>"; };
+		1B6DF0DE2608C93E0078DF34 /* vector_float2.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = vector_float2.hpp; sourceTree = "<group>"; };
+		1B6DF0DF2608C93E0078DF34 /* matrix_double2x3_precision.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = matrix_double2x3_precision.hpp; sourceTree = "<group>"; };
+		1B6DF0E02608C93E0078DF34 /* vector_bool2_precision.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = vector_bool2_precision.hpp; sourceTree = "<group>"; };
+		1B6DF0E12608C93E0078DF34 /* quaternion_double.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = quaternion_double.hpp; sourceTree = "<group>"; };
+		1B6DF0E22608C93E0078DF34 /* matrix_double4x3.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = matrix_double4x3.hpp; sourceTree = "<group>"; };
+		1B6DF0E32608C93E0078DF34 /* quaternion_common_simd.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = quaternion_common_simd.inl; sourceTree = "<group>"; };
+		1B6DF0E42608C93E0078DF34 /* vector_int2.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = vector_int2.hpp; sourceTree = "<group>"; };
+		1B6DF0E52608C93E0078DF34 /* vector_double2_precision.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = vector_double2_precision.hpp; sourceTree = "<group>"; };
+		1B6DF0E62608C93E0078DF34 /* matrix_float3x2_precision.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = matrix_float3x2_precision.hpp; sourceTree = "<group>"; };
+		1B6DF0E72608C93E0078DF34 /* matrix_relational.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = matrix_relational.hpp; sourceTree = "<group>"; };
+		1B6DF0E82608C93E0078DF34 /* vector_integer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = vector_integer.hpp; sourceTree = "<group>"; };
+		1B6DF0E92608C93E0078DF34 /* scalar_relational.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = scalar_relational.hpp; sourceTree = "<group>"; };
+		1B6DF0EA2608C93E0078DF34 /* vector_float1.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = vector_float1.hpp; sourceTree = "<group>"; };
+		1B6DF0EB2608C93E0078DF34 /* vector_int3.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = vector_int3.hpp; sourceTree = "<group>"; };
+		1B6DF0EC2608C93E0078DF34 /* scalar_constants.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = scalar_constants.inl; sourceTree = "<group>"; };
+		1B6DF0ED2608C93E0078DF34 /* matrix_double4x4.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = matrix_double4x4.hpp; sourceTree = "<group>"; };
+		1B6DF0EE2608C93E0078DF34 /* scalar_uint_sized.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = scalar_uint_sized.hpp; sourceTree = "<group>"; };
+		1B6DF0EF2608C93E0078DF34 /* vector_double1_precision.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = vector_double1_precision.hpp; sourceTree = "<group>"; };
+		1B6DF0F02608C93E0078DF34 /* matrix_double2x2.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = matrix_double2x2.hpp; sourceTree = "<group>"; };
+		1B6DF0F12608C93E0078DF34 /* matrix_float4x2_precision.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = matrix_float4x2_precision.hpp; sourceTree = "<group>"; };
+		1B6DF0F22608C93E0078DF34 /* matrix_double2x3.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = matrix_double2x3.hpp; sourceTree = "<group>"; };
+		1B6DF0F32608C93E0078DF34 /* matrix_projection.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = matrix_projection.hpp; sourceTree = "<group>"; };
+		1B6DF0F42608C93E0078DF34 /* vector_float4.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = vector_float4.hpp; sourceTree = "<group>"; };
+		1B6DF0F52608C93E0078DF34 /* vector_common.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = vector_common.inl; sourceTree = "<group>"; };
+		1B6DF0F62608C93E0078DF34 /* vector_int4_precision.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = vector_int4_precision.hpp; sourceTree = "<group>"; };
+		1B6DF0F72608C93E0078DF34 /* matrix_double2x4_precision.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = matrix_double2x4_precision.hpp; sourceTree = "<group>"; };
+		1B6DF0F82608C93E0078DF34 /* vector_int4.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = vector_int4.hpp; sourceTree = "<group>"; };
+		1B6DF0F92608C93E0078DF34 /* quaternion_relational.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = quaternion_relational.hpp; sourceTree = "<group>"; };
+		1B6DF0FA2608C93E0078DF34 /* quaternion_trigonometric.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = quaternion_trigonometric.hpp; sourceTree = "<group>"; };
+		1B6DF0FB2608C93F0078DF34 /* vector_bool1_precision.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = vector_bool1_precision.hpp; sourceTree = "<group>"; };
+		1B6DF0FC2608C93F0078DF34 /* vector_ulp.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = vector_ulp.hpp; sourceTree = "<group>"; };
+		1B6DF0FD2608C93F0078DF34 /* vector_float3_precision.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = vector_float3_precision.hpp; sourceTree = "<group>"; };
+		1B6DF0FE2608C93F0078DF34 /* vector_uint4_precision.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = vector_uint4_precision.hpp; sourceTree = "<group>"; };
+		1B6DF0FF2608C93F0078DF34 /* matrix_projection.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = matrix_projection.inl; sourceTree = "<group>"; };
+		1B6DF1002608C93F0078DF34 /* vector_common.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = vector_common.hpp; sourceTree = "<group>"; };
+		1B6DF1012608C93F0078DF34 /* scalar_constants.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = scalar_constants.hpp; sourceTree = "<group>"; };
+		1B6DF1022608C93F0078DF34 /* matrix_double3x4.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = matrix_double3x4.hpp; sourceTree = "<group>"; };
+		1B6DF1032608C93F0078DF34 /* quaternion_trigonometric.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = quaternion_trigonometric.inl; sourceTree = "<group>"; };
+		1B6DF1042608C93F0078DF34 /* matrix_double4x3_precision.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = matrix_double4x3_precision.hpp; sourceTree = "<group>"; };
+		1B6DF1052608C93F0078DF34 /* vector_ulp.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = vector_ulp.inl; sourceTree = "<group>"; };
+		1B6DF1062608C93F0078DF34 /* matrix_double3x4_precision.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = matrix_double3x4_precision.hpp; sourceTree = "<group>"; };
+		1B6DF1072608C93F0078DF34 /* quaternion_relational.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = quaternion_relational.inl; sourceTree = "<group>"; };
+		1B6DF1082608C93F0078DF34 /* vector_double4.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = vector_double4.hpp; sourceTree = "<group>"; };
+		1B6DF1092608C93F0078DF34 /* matrix_transform_ext.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = matrix_transform_ext.inl; sourceTree = "<group>"; };
+		1B6DF10A2608C93F0078DF34 /* vector_double1.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = vector_double1.hpp; sourceTree = "<group>"; };
+		1B6DF10B2608C93F0078DF34 /* matrix_double4x4_precision.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = matrix_double4x4_precision.hpp; sourceTree = "<group>"; };
+		1B6DF10C2608C93F0078DF34 /* scalar_ulp.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = scalar_ulp.inl; sourceTree = "<group>"; };
+		1B6DF10D2608C93F0078DF34 /* quaternion_geometric.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = quaternion_geometric.inl; sourceTree = "<group>"; };
+		1B6DF10E2608C93F0078DF34 /* matrix_double3x3_precision.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = matrix_double3x3_precision.hpp; sourceTree = "<group>"; };
+		1B6DF10F2608C93F0078DF34 /* matrix_double3x2.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = matrix_double3x2.hpp; sourceTree = "<group>"; };
+		1B6DF1102608C93F0078DF34 /* matrix_float2x2_precision.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = matrix_float2x2_precision.hpp; sourceTree = "<group>"; };
+		1B6DF1112608C93F0078DF34 /* vector_integer.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = vector_integer.inl; sourceTree = "<group>"; };
+		1B6DF1122608C93F0078DF34 /* vector_double3.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = vector_double3.hpp; sourceTree = "<group>"; };
+		1B6DF1132608C93F0078DF34 /* vector_float4_precision.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = vector_float4_precision.hpp; sourceTree = "<group>"; };
+		1B6DF1142608C93F0078DF34 /* vector_double2.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = vector_double2.hpp; sourceTree = "<group>"; };
+		1B6DF1152608C93F0078DF34 /* matrix_relational.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = matrix_relational.inl; sourceTree = "<group>"; };
+		1B6DF1162608C93F0078DF34 /* vector_uint3_precision.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = vector_uint3_precision.hpp; sourceTree = "<group>"; };
+		1B6DF1172608C93F0078DF34 /* matrix_double3x3.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = matrix_double3x3.hpp; sourceTree = "<group>"; };
+		1B6DF1192608C93F0078DF34 /* vector_relational.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vector_relational.h; sourceTree = "<group>"; };
+		1B6DF11A2608C93F0078DF34 /* matrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = matrix.h; sourceTree = "<group>"; };
+		1B6DF11B2608C93F0078DF34 /* packing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = packing.h; sourceTree = "<group>"; };
+		1B6DF11C2608C93F0078DF34 /* common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = common.h; sourceTree = "<group>"; };
+		1B6DF11D2608C93F0078DF34 /* trigonometric.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = trigonometric.h; sourceTree = "<group>"; };
+		1B6DF11E2608C93F0078DF34 /* geometric.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = geometric.h; sourceTree = "<group>"; };
+		1B6DF11F2608C93F0078DF34 /* integer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = integer.h; sourceTree = "<group>"; };
+		1B6DF1202608C93F0078DF34 /* platform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = platform.h; sourceTree = "<group>"; };
+		1B6DF1212608C93F0078DF34 /* exponential.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = exponential.h; sourceTree = "<group>"; };
+		1B6DF1222608C93F0078DF34 /* mat3x4.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = mat3x4.hpp; sourceTree = "<group>"; };
+		1B6DF1232608C93F0078DF34 /* matrix.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = matrix.hpp; sourceTree = "<group>"; };
+		1B6DF1242608C93F0078DF34 /* glm.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = glm.hpp; sourceTree = "<group>"; };
+		1B6DF1252608C93F0078DF34 /* trigonometric.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = trigonometric.hpp; sourceTree = "<group>"; };
+		1B6DF1262608C93F0078DF34 /* geometric.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = geometric.hpp; sourceTree = "<group>"; };
+		1B6DF1282608C93F0078DF34 /* func_exponential.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = func_exponential.inl; sourceTree = "<group>"; };
+		1B6DF1292608C93F0078DF34 /* func_integer_simd.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = func_integer_simd.inl; sourceTree = "<group>"; };
+		1B6DF12A2608C93F0078DF34 /* func_vector_relational.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = func_vector_relational.inl; sourceTree = "<group>"; };
+		1B6DF12B2608C93F0078DF34 /* func_packing.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = func_packing.inl; sourceTree = "<group>"; };
+		1B6DF12C2608C93F0078DF34 /* _fixes.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = _fixes.hpp; sourceTree = "<group>"; };
+		1B6DF12D2608C93F0078DF34 /* type_quat.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = type_quat.inl; sourceTree = "<group>"; };
+		1B6DF12E2608C93F0078DF34 /* type_half.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = type_half.inl; sourceTree = "<group>"; };
+		1B6DF12F2608C93F0078DF34 /* func_vector_relational_simd.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = func_vector_relational_simd.inl; sourceTree = "<group>"; };
+		1B6DF1302608C93F0078DF34 /* qualifier.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = qualifier.hpp; sourceTree = "<group>"; };
+		1B6DF1312608C93F0078DF34 /* func_matrix_simd.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = func_matrix_simd.inl; sourceTree = "<group>"; };
+		1B6DF1322608C93F0078DF34 /* _noise.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = _noise.hpp; sourceTree = "<group>"; };
+		1B6DF1332608C93F0078DF34 /* type_half.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = type_half.hpp; sourceTree = "<group>"; };
+		1B6DF1342608C93F0078DF34 /* _features.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = _features.hpp; sourceTree = "<group>"; };
+		1B6DF1352608C93F0078DF34 /* func_integer.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = func_integer.inl; sourceTree = "<group>"; };
+		1B6DF1362608C93F0078DF34 /* _vectorize.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = _vectorize.hpp; sourceTree = "<group>"; };
+		1B6DF1372608C93F0078DF34 /* func_geometric.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = func_geometric.inl; sourceTree = "<group>"; };
+		1B6DF1382608C93F0078DF34 /* type_quat.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = type_quat.hpp; sourceTree = "<group>"; };
+		1B6DF1392608C93F0078DF34 /* func_common.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = func_common.inl; sourceTree = "<group>"; };
+		1B6DF13A2608C93F0078DF34 /* type_quat_simd.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = type_quat_simd.inl; sourceTree = "<group>"; };
+		1B6DF13B2608C93F0078DF34 /* func_trigonometric.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = func_trigonometric.inl; sourceTree = "<group>"; };
+		1B6DF13C2608C93F0078DF34 /* type_mat2x4.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = type_mat2x4.inl; sourceTree = "<group>"; };
+		1B6DF13D2608C93F0078DF34 /* type_mat4x2.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = type_mat4x2.inl; sourceTree = "<group>"; };
+		1B6DF13E2608C93F0078DF34 /* _swizzle.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = _swizzle.hpp; sourceTree = "<group>"; };
+		1B6DF13F2608C93F0078DF34 /* type_mat4x3.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = type_mat4x3.inl; sourceTree = "<group>"; };
+		1B6DF1402608C93F0078DF34 /* func_packing_simd.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = func_packing_simd.inl; sourceTree = "<group>"; };
+		1B6DF1412608C93F0078DF34 /* type_vec4.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = type_vec4.inl; sourceTree = "<group>"; };
+		1B6DF1422608C93F0078DF34 /* func_trigonometric_simd.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = func_trigonometric_simd.inl; sourceTree = "<group>"; };
+		1B6DF1432608C93F0078DF34 /* type_mat3x3.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = type_mat3x3.hpp; sourceTree = "<group>"; };
+		1B6DF1442608C93F0078DF34 /* type_mat3x2.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = type_mat3x2.hpp; sourceTree = "<group>"; };
+		1B6DF1452608C93F0078DF34 /* compute_common.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = compute_common.hpp; sourceTree = "<group>"; };
+		1B6DF1462608C93F0078DF34 /* setup.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = setup.hpp; sourceTree = "<group>"; };
+		1B6DF1472608C93F0078DF34 /* type_mat2x2.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = type_mat2x2.inl; sourceTree = "<group>"; };
+		1B6DF1482608C93F0078DF34 /* type_vec1.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = type_vec1.inl; sourceTree = "<group>"; };
+		1B6DF1492608C93F0078DF34 /* func_common_simd.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = func_common_simd.inl; sourceTree = "<group>"; };
+		1B6DF14A2608C93F0078DF34 /* type_mat4x4.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = type_mat4x4.inl; sourceTree = "<group>"; };
+		1B6DF14B2608C93F0078DF34 /* func_geometric_simd.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = func_geometric_simd.inl; sourceTree = "<group>"; };
+		1B6DF14C2608C93F0078DF34 /* type_mat2x3.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = type_mat2x3.inl; sourceTree = "<group>"; };
+		1B6DF14D2608C93F0078DF34 /* type_vec2.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = type_vec2.inl; sourceTree = "<group>"; };
+		1B6DF14E2608C93F0078DF34 /* glm.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = glm.cpp; sourceTree = "<group>"; };
+		1B6DF14F2608C93F0078DF34 /* type_mat3x4.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = type_mat3x4.hpp; sourceTree = "<group>"; };
+		1B6DF1502608C93F0078DF34 /* type_vec3.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = type_vec3.inl; sourceTree = "<group>"; };
+		1B6DF1512608C93F0078DF34 /* type_mat4x4_simd.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = type_mat4x4_simd.inl; sourceTree = "<group>"; };
+		1B6DF1522608C93F0078DF34 /* type_mat2x3.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = type_mat2x3.hpp; sourceTree = "<group>"; };
+		1B6DF1532608C93F0078DF34 /* type_mat4x4.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = type_mat4x4.hpp; sourceTree = "<group>"; };
+		1B6DF1542608C93F0078DF34 /* func_matrix.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = func_matrix.inl; sourceTree = "<group>"; };
+		1B6DF1552608C93F0078DF34 /* type_mat2x2.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = type_mat2x2.hpp; sourceTree = "<group>"; };
+		1B6DF1562608C93F0078DF34 /* type_vec1.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = type_vec1.hpp; sourceTree = "<group>"; };
+		1B6DF1572608C93F0078DF34 /* _swizzle_func.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = _swizzle_func.hpp; sourceTree = "<group>"; };
+		1B6DF1582608C93F0078DF34 /* type_vec3.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = type_vec3.hpp; sourceTree = "<group>"; };
+		1B6DF1592608C93F0078DF34 /* compute_vector_relational.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = compute_vector_relational.hpp; sourceTree = "<group>"; };
+		1B6DF15A2608C93F0078DF34 /* type_vec4_simd.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = type_vec4_simd.inl; sourceTree = "<group>"; };
+		1B6DF15B2608C93F0078DF34 /* type_mat3x4.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = type_mat3x4.inl; sourceTree = "<group>"; };
+		1B6DF15C2608C93F0078DF34 /* func_exponential_simd.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = func_exponential_simd.inl; sourceTree = "<group>"; };
+		1B6DF15D2608C93F0078DF34 /* type_vec2.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = type_vec2.hpp; sourceTree = "<group>"; };
+		1B6DF15E2608C93F0078DF34 /* type_mat4x3.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = type_mat4x3.hpp; sourceTree = "<group>"; };
+		1B6DF15F2608C93F0078DF34 /* type_mat4x2.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = type_mat4x2.hpp; sourceTree = "<group>"; };
+		1B6DF1602608C93F0078DF34 /* type_float.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = type_float.hpp; sourceTree = "<group>"; };
+		1B6DF1612608C93F0078DF34 /* type_mat2x4.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = type_mat2x4.hpp; sourceTree = "<group>"; };
+		1B6DF1622608C93F0078DF34 /* type_mat3x2.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = type_mat3x2.inl; sourceTree = "<group>"; };
+		1B6DF1632608C93F0078DF34 /* type_mat3x3.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = type_mat3x3.inl; sourceTree = "<group>"; };
+		1B6DF1642608C93F0078DF34 /* type_vec4.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = type_vec4.hpp; sourceTree = "<group>"; };
+		1B6DF1652608C93F0078DF34 /* ext.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ext.hpp; sourceTree = "<group>"; };
+		1B6DF1672608C93F0078DF34 /* color_space_gtc.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = color_space_gtc.inl; sourceTree = "<group>"; };
+		1B6DF1682608C93F0078DF34 /* integer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = integer.hpp; sourceTree = "<group>"; };
+		1B6DF1692608C93F0078DF34 /* matrix_integer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = matrix_integer.hpp; sourceTree = "<group>"; };
+		1B6DF16A2608C93F0078DF34 /* matrix_inverse.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = matrix_inverse.inl; sourceTree = "<group>"; };
+		1B6DF16B2608C93F0078DF34 /* packing.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = packing.inl; sourceTree = "<group>"; };
+		1B6DF16C2608C93F0078DF34 /* vec1.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = vec1.hpp; sourceTree = "<group>"; };
+		1B6DF16D2608C93F0078DF34 /* type_precision.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = type_precision.inl; sourceTree = "<group>"; };
+		1B6DF16E2608C93F0078DF34 /* bitfield.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = bitfield.inl; sourceTree = "<group>"; };
+		1B6DF16F2608C93F0078DF34 /* ulp.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ulp.hpp; sourceTree = "<group>"; };
+		1B6DF1702608C93F0078DF34 /* round.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = round.inl; sourceTree = "<group>"; };
+		1B6DF1712608C93F0078DF34 /* packing.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = packing.hpp; sourceTree = "<group>"; };
+		1B6DF1722608C93F0078DF34 /* quaternion_simd.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = quaternion_simd.inl; sourceTree = "<group>"; };
+		1B6DF1732608C93F0078DF34 /* ulp.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ulp.inl; sourceTree = "<group>"; };
+		1B6DF1742608C93F0078DF34 /* round.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = round.hpp; sourceTree = "<group>"; };
+		1B6DF1752608C93F0078DF34 /* matrix_transform.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = matrix_transform.hpp; sourceTree = "<group>"; };
+		1B6DF1762608C93F0078DF34 /* type_precision.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = type_precision.hpp; sourceTree = "<group>"; };
+		1B6DF1772608C93F0078DF34 /* bitfield.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = bitfield.hpp; sourceTree = "<group>"; };
+		1B6DF1782608C93F0078DF34 /* quaternion.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = quaternion.hpp; sourceTree = "<group>"; };
+		1B6DF1792608C93F0078DF34 /* matrix_inverse.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = matrix_inverse.hpp; sourceTree = "<group>"; };
+		1B6DF17A2608C93F0078DF34 /* epsilon.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = epsilon.inl; sourceTree = "<group>"; };
+		1B6DF17B2608C93F0078DF34 /* random.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = random.hpp; sourceTree = "<group>"; };
+		1B6DF17C2608C93F0078DF34 /* integer_gtc.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = integer_gtc.inl; sourceTree = "<group>"; };
+		1B6DF17D2608C93F0078DF34 /* matrix_access.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = matrix_access.inl; sourceTree = "<group>"; };
+		1B6DF17E2608C93F0078DF34 /* type_ptr.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = type_ptr.hpp; sourceTree = "<group>"; };
+		1B6DF17F2608C93F0078DF34 /* reciprocal.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = reciprocal.inl; sourceTree = "<group>"; };
+		1B6DF1802608C93F0078DF34 /* constants.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = constants.hpp; sourceTree = "<group>"; };
+		1B6DF1812608C93F0078DF34 /* color_space.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = color_space.hpp; sourceTree = "<group>"; };
+		1B6DF1822608C93F0078DF34 /* quaternion_gtc.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = quaternion_gtc.inl; sourceTree = "<group>"; };
+		1B6DF1832608C93F0078DF34 /* noise.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = noise.hpp; sourceTree = "<group>"; };
+		1B6DF1842608C93F0078DF34 /* matrix_transform_gtc.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = matrix_transform_gtc.inl; sourceTree = "<group>"; };
+		1B6DF1852608C93F0078DF34 /* noise.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = noise.inl; sourceTree = "<group>"; };
+		1B6DF1862608C93F0078DF34 /* matrix_access.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = matrix_access.hpp; sourceTree = "<group>"; };
+		1B6DF1872608C93F0078DF34 /* random.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = random.inl; sourceTree = "<group>"; };
+		1B6DF1882608C93F0078DF34 /* epsilon.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = epsilon.hpp; sourceTree = "<group>"; };
+		1B6DF1892608C93F0078DF34 /* constants.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = constants.inl; sourceTree = "<group>"; };
+		1B6DF18A2608C93F0078DF34 /* reciprocal.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = reciprocal.hpp; sourceTree = "<group>"; };
+		1B6DF18B2608C93F0078DF34 /* type_ptr.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = type_ptr.inl; sourceTree = "<group>"; };
+		1B6DF18C2608C93F0078DF34 /* type_aligned.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = type_aligned.hpp; sourceTree = "<group>"; };
+		1B6DF18D2608C93F0078DF34 /* common.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = common.hpp; sourceTree = "<group>"; };
+		1B6DF18F2608C93F0078DF34 /* vector_angle.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = vector_angle.hpp; sourceTree = "<group>"; };
+		1B6DF1902608C93F0078DF34 /* log_base.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = log_base.inl; sourceTree = "<group>"; };
+		1B6DF1912608C93F0078DF34 /* matrix_query.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = matrix_query.inl; sourceTree = "<group>"; };
+		1B6DF1922608C93F0078DF34 /* extend.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = extend.inl; sourceTree = "<group>"; };
+		1B6DF1932608C93F0078DF34 /* integer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = integer.hpp; sourceTree = "<group>"; };
+		1B6DF1942608C93F0078DF34 /* associated_min_max.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = associated_min_max.inl; sourceTree = "<group>"; };
+		1B6DF1952608C93F0078DF34 /* matrix_transform_2d.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = matrix_transform_2d.inl; sourceTree = "<group>"; };
+		1B6DF1962608C93F0078DF34 /* hash.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = hash.hpp; sourceTree = "<group>"; };
+		1B6DF1972608C93F0078DF34 /* rotate_vector.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = rotate_vector.hpp; sourceTree = "<group>"; };
+		1B6DF1982608C93F0078DF34 /* matrix_interpolation.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = matrix_interpolation.hpp; sourceTree = "<group>"; };
+		1B6DF1992608C93F0078DF34 /* functions.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = functions.hpp; sourceTree = "<group>"; };
+		1B6DF19A2608C93F0078DF34 /* exterior_product.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = exterior_product.inl; sourceTree = "<group>"; };
+		1B6DF19B2608C93F0078DF34 /* gradient_paint.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = gradient_paint.inl; sourceTree = "<group>"; };
+		1B6DF19C2608C93F0078DF34 /* string_cast.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = string_cast.hpp; sourceTree = "<group>"; };
+		1B6DF19D2608C93F0078DF34 /* color_space_YCoCg.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = color_space_YCoCg.hpp; sourceTree = "<group>"; };
+		1B6DF19E2608C93F0078DF34 /* type_trait.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = type_trait.inl; sourceTree = "<group>"; };
+		1B6DF19F2608C93F0078DF34 /* extended_min_max.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = extended_min_max.hpp; sourceTree = "<group>"; };
+		1B6DF1A02608C93F0078DF34 /* euler_angles.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = euler_angles.inl; sourceTree = "<group>"; };
+		1B6DF1A12608C93F0078DF34 /* fast_square_root.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = fast_square_root.hpp; sourceTree = "<group>"; };
+		1B6DF1A22608C93F0078DF34 /* raw_data.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = raw_data.inl; sourceTree = "<group>"; };
+		1B6DF1A32608C93F0078DF34 /* matrix_cross_product.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = matrix_cross_product.inl; sourceTree = "<group>"; };
+		1B6DF1A42608C93F0078DF34 /* spline.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = spline.hpp; sourceTree = "<group>"; };
+		1B6DF1A52608C93F0078DF34 /* fast_trigonometry.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = fast_trigonometry.hpp; sourceTree = "<group>"; };
+		1B6DF1A62608C93F0078DF34 /* optimum_pow.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = optimum_pow.inl; sourceTree = "<group>"; };
+		1B6DF1A72608C93F0078DF34 /* dual_quaternion.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = dual_quaternion.hpp; sourceTree = "<group>"; };
+		1B6DF1A82608C9400078DF34 /* closest_point.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = closest_point.hpp; sourceTree = "<group>"; };
+		1B6DF1A92608C9400078DF34 /* number_precision.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = number_precision.inl; sourceTree = "<group>"; };
+		1B6DF1AA2608C9400078DF34 /* mixed_product.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mixed_product.inl; sourceTree = "<group>"; };
+		1B6DF1AB2608C9400078DF34 /* transform.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = transform.inl; sourceTree = "<group>"; };
+		1B6DF1AC2608C9400078DF34 /* bit.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = bit.inl; sourceTree = "<group>"; };
+		1B6DF1AD2608C9400078DF34 /* io.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = io.inl; sourceTree = "<group>"; };
+		1B6DF1AE2608C9400078DF34 /* fast_trigonometry.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fast_trigonometry.inl; sourceTree = "<group>"; };
+		1B6DF1AF2608C9400078DF34 /* optimum_pow.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = optimum_pow.hpp; sourceTree = "<group>"; };
+		1B6DF1B02608C9400078DF34 /* spline.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = spline.inl; sourceTree = "<group>"; };
+		1B6DF1B12608C9400078DF34 /* raw_data.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = raw_data.hpp; sourceTree = "<group>"; };
+		1B6DF1B22608C9400078DF34 /* matrix_cross_product.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = matrix_cross_product.hpp; sourceTree = "<group>"; };
+		1B6DF1B32608C9400078DF34 /* euler_angles.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = euler_angles.hpp; sourceTree = "<group>"; };
+		1B6DF1B42608C9400078DF34 /* fast_square_root.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fast_square_root.inl; sourceTree = "<group>"; };
+		1B6DF1B52608C9400078DF34 /* color_space_YCoCg.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = color_space_YCoCg.inl; sourceTree = "<group>"; };
+		1B6DF1B62608C9400078DF34 /* type_trait.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = type_trait.hpp; sourceTree = "<group>"; };
+		1B6DF1B72608C9400078DF34 /* extended_min_max.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = extended_min_max.inl; sourceTree = "<group>"; };
+		1B6DF1B82608C9400078DF34 /* io.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = io.hpp; sourceTree = "<group>"; };
+		1B6DF1B92608C9400078DF34 /* float_notmalize.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = float_notmalize.inl; sourceTree = "<group>"; };
+		1B6DF1BA2608C9400078DF34 /* transform.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = transform.hpp; sourceTree = "<group>"; };
+		1B6DF1BB2608C9400078DF34 /* bit.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = bit.hpp; sourceTree = "<group>"; };
+		1B6DF1BC2608C9400078DF34 /* number_precision.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = number_precision.hpp; sourceTree = "<group>"; };
+		1B6DF1BD2608C9400078DF34 /* mixed_product.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = mixed_product.hpp; sourceTree = "<group>"; };
+		1B6DF1BE2608C9400078DF34 /* closest_point.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = closest_point.inl; sourceTree = "<group>"; };
+		1B6DF1BF2608C9400078DF34 /* quaternion_gtx.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = quaternion_gtx.inl; sourceTree = "<group>"; };
+		1B6DF1C02608C9400078DF34 /* dual_quaternion.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dual_quaternion.inl; sourceTree = "<group>"; };
+		1B6DF1C12608C9400078DF34 /* associated_min_max.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = associated_min_max.hpp; sourceTree = "<group>"; };
+		1B6DF1C22608C9400078DF34 /* matrix_transform_2d.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = matrix_transform_2d.hpp; sourceTree = "<group>"; };
+		1B6DF1C32608C9400078DF34 /* log_base.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = log_base.hpp; sourceTree = "<group>"; };
+		1B6DF1C42608C9400078DF34 /* matrix_query.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = matrix_query.hpp; sourceTree = "<group>"; };
+		1B6DF1C52608C9400078DF34 /* vector_angle.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = vector_angle.inl; sourceTree = "<group>"; };
+		1B6DF1C62608C9400078DF34 /* extend.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = extend.hpp; sourceTree = "<group>"; };
+		1B6DF1C72608C9400078DF34 /* gradient_paint.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = gradient_paint.hpp; sourceTree = "<group>"; };
+		1B6DF1C82608C9400078DF34 /* quaternion.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = quaternion.hpp; sourceTree = "<group>"; };
+		1B6DF1C92608C9400078DF34 /* exterior_product.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = exterior_product.hpp; sourceTree = "<group>"; };
+		1B6DF1CA2608C9400078DF34 /* string_cast.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = string_cast.inl; sourceTree = "<group>"; };
+		1B6DF1CB2608C9400078DF34 /* functions.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = functions.inl; sourceTree = "<group>"; };
+		1B6DF1CC2608C9400078DF34 /* rotate_vector.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rotate_vector.inl; sourceTree = "<group>"; };
+		1B6DF1CD2608C9400078DF34 /* matrix_interpolation.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = matrix_interpolation.inl; sourceTree = "<group>"; };
+		1B6DF1CE2608C9400078DF34 /* integer_gtx.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = integer_gtx.inl; sourceTree = "<group>"; };
+		1B6DF1CF2608C9400078DF34 /* hash.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = hash.inl; sourceTree = "<group>"; };
+		1B6DF1D02608C9400078DF34 /* vector_query.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = vector_query.inl; sourceTree = "<group>"; };
+		1B6DF1D12608C9400078DF34 /* polar_coordinates.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = polar_coordinates.hpp; sourceTree = "<group>"; };
+		1B6DF1D22608C9400078DF34 /* orthonormalize.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = orthonormalize.inl; sourceTree = "<group>"; };
+		1B6DF1D32608C9400078DF34 /* component_wise.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = component_wise.inl; sourceTree = "<group>"; };
+		1B6DF1D42608C9400078DF34 /* normalize_dot.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = normalize_dot.inl; sourceTree = "<group>"; };
+		1B6DF1D52608C9400078DF34 /* std_based_type.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = std_based_type.inl; sourceTree = "<group>"; };
+		1B6DF1D62608C9400078DF34 /* matrix_factorisation.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = matrix_factorisation.inl; sourceTree = "<group>"; };
+		1B6DF1D72608C9400078DF34 /* type_aligned.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = type_aligned.inl; sourceTree = "<group>"; };
+		1B6DF1D82608C9400078DF34 /* vec_swizzle.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = vec_swizzle.hpp; sourceTree = "<group>"; };
+		1B6DF1D92608C9400078DF34 /* projection.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = projection.hpp; sourceTree = "<group>"; };
+		1B6DF1DA2608C9400078DF34 /* compatibility.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = compatibility.inl; sourceTree = "<group>"; };
+		1B6DF1DB2608C9400078DF34 /* scalar_relational.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = scalar_relational.hpp; sourceTree = "<group>"; };
+		1B6DF1DC2608C9400078DF34 /* wrap.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = wrap.hpp; sourceTree = "<group>"; };
+		1B6DF1DD2608C9400078DF34 /* scalar_relational_gtx.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = scalar_relational_gtx.inl; sourceTree = "<group>"; };
+		1B6DF1DE2608C9400078DF34 /* rotate_normalized_axis.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rotate_normalized_axis.inl; sourceTree = "<group>"; };
+		1B6DF1DF2608C9400078DF34 /* texture.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = texture.hpp; sourceTree = "<group>"; };
+		1B6DF1E02608C9400078DF34 /* color_encoding.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = color_encoding.inl; sourceTree = "<group>"; };
+		1B6DF1E12608C9400078DF34 /* norm.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = norm.hpp; sourceTree = "<group>"; };
+		1B6DF1E22608C9400078DF34 /* matrix_major_storage.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = matrix_major_storage.inl; sourceTree = "<group>"; };
+		1B6DF1E32608C9400078DF34 /* matrix_operation.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = matrix_operation.inl; sourceTree = "<group>"; };
+		1B6DF1E42608C9400078DF34 /* color_space.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = color_space.hpp; sourceTree = "<group>"; };
+		1B6DF1E52608C9400078DF34 /* normal.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = normal.hpp; sourceTree = "<group>"; };
+		1B6DF1E62608C9400078DF34 /* intersect.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = intersect.inl; sourceTree = "<group>"; };
+		1B6DF1E72608C9400078DF34 /* perpendicular.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = perpendicular.inl; sourceTree = "<group>"; };
+		1B6DF1E82608C9400078DF34 /* easing.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = easing.hpp; sourceTree = "<group>"; };
+		1B6DF1E92608C9400078DF34 /* transform2.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = transform2.inl; sourceTree = "<group>"; };
+		1B6DF1EA2608C9400078DF34 /* matrix_decompose.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = matrix_decompose.hpp; sourceTree = "<group>"; };
+		1B6DF1EB2608C9400078DF34 /* fast_exponential.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = fast_exponential.hpp; sourceTree = "<group>"; };
+		1B6DF1EC2608C9400078DF34 /* common.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = common.inl; sourceTree = "<group>"; };
+		1B6DF1ED2608C9400078DF34 /* handed_coordinate_space.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = handed_coordinate_space.hpp; sourceTree = "<group>"; };
+		1B6DF1EE2608C9400078DF34 /* intersect.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = intersect.hpp; sourceTree = "<group>"; };
+		1B6DF1EF2608C9400078DF34 /* perpendicular.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = perpendicular.hpp; sourceTree = "<group>"; };
+		1B6DF1F02608C9400078DF34 /* easing.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = easing.inl; sourceTree = "<group>"; };
+		1B6DF1F12608C9400078DF34 /* matrix_operation.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = matrix_operation.hpp; sourceTree = "<group>"; };
+		1B6DF1F22608C9400078DF34 /* normal.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = normal.inl; sourceTree = "<group>"; };
+		1B6DF1F32608C9400078DF34 /* color_encoding.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = color_encoding.hpp; sourceTree = "<group>"; };
+		1B6DF1F42608C9400078DF34 /* matrix_major_storage.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = matrix_major_storage.hpp; sourceTree = "<group>"; };
+		1B6DF1F52608C9400078DF34 /* norm.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = norm.inl; sourceTree = "<group>"; };
+		1B6DF1F62608C9400078DF34 /* texture.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = texture.inl; sourceTree = "<group>"; };
+		1B6DF1F72608C9400078DF34 /* handed_coordinate_space.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = handed_coordinate_space.inl; sourceTree = "<group>"; };
+		1B6DF1F82608C9400078DF34 /* common.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = common.hpp; sourceTree = "<group>"; };
+		1B6DF1F92608C9400078DF34 /* range.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = range.hpp; sourceTree = "<group>"; };
+		1B6DF1FA2608C9400078DF34 /* fast_exponential.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fast_exponential.inl; sourceTree = "<group>"; };
+		1B6DF1FB2608C9400078DF34 /* transform2.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = transform2.hpp; sourceTree = "<group>"; };
+		1B6DF1FC2608C9400078DF34 /* matrix_decompose.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = matrix_decompose.inl; sourceTree = "<group>"; };
+		1B6DF1FD2608C9400078DF34 /* scalar_multiplication.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = scalar_multiplication.hpp; sourceTree = "<group>"; };
+		1B6DF1FE2608C9400078DF34 /* std_based_type.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = std_based_type.hpp; sourceTree = "<group>"; };
+		1B6DF1FF2608C9400078DF34 /* matrix_factorisation.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = matrix_factorisation.hpp; sourceTree = "<group>"; };
+		1B6DF2002608C9400078DF34 /* orthonormalize.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = orthonormalize.hpp; sourceTree = "<group>"; };
+		1B6DF2012608C9400078DF34 /* normalize_dot.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = normalize_dot.hpp; sourceTree = "<group>"; };
+		1B6DF2022608C9400078DF34 /* component_wise.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = component_wise.hpp; sourceTree = "<group>"; };
+		1B6DF2032608C9400078DF34 /* polar_coordinates.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = polar_coordinates.inl; sourceTree = "<group>"; };
+		1B6DF2042608C9400078DF34 /* vector_query.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = vector_query.hpp; sourceTree = "<group>"; };
+		1B6DF2052608C9400078DF34 /* wrap.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = wrap.inl; sourceTree = "<group>"; };
+		1B6DF2062608C9400078DF34 /* compatibility.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = compatibility.hpp; sourceTree = "<group>"; };
+		1B6DF2072608C9400078DF34 /* rotate_normalized_axis.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = rotate_normalized_axis.hpp; sourceTree = "<group>"; };
+		1B6DF2082608C9400078DF34 /* color_space_gtx.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = color_space_gtx.inl; sourceTree = "<group>"; };
+		1B6DF2092608C9400078DF34 /* projection.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = projection.inl; sourceTree = "<group>"; };
+		1B6DF20A2608C9400078DF34 /* type_aligned.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = type_aligned.hpp; sourceTree = "<group>"; };
+		1B6DF2972608C9E80078DF34 /* libzlibstatic-fat.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libzlibstatic-fat.a"; sourceTree = "<group>"; };
+		1B6DF2982608C9E80078DF34 /* libIrrXML-fat.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libIrrXML-fat.a"; sourceTree = "<group>"; };
+		1B6DF2992608C9F80078DF34 /* libassimp-fat.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libassimp-fat.a"; sourceTree = "<group>"; };
+		1B6DF29E2608CA0A0078DF34 /* ByteSwapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ByteSwapper.h; sourceTree = "<group>"; };
+		1B6DF29F2608CA0A0078DF34 /* IOSystem.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = IOSystem.hpp; sourceTree = "<group>"; };
+		1B6DF2A02608CA0A0078DF34 /* StreamReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StreamReader.h; sourceTree = "<group>"; };
+		1B6DF2A12608CA0A0078DF34 /* Logger.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Logger.hpp; sourceTree = "<group>"; };
+		1B6DF2A22608CA0A0078DF34 /* IOStream.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = IOStream.hpp; sourceTree = "<group>"; };
+		1B6DF2A32608CA0A0078DF34 /* SkeletonMeshBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SkeletonMeshBuilder.h; sourceTree = "<group>"; };
+		1B6DF2A42608CA0A0078DF34 /* Vertex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vertex.h; sourceTree = "<group>"; };
+		1B6DF2A52608CA0A0078DF34 /* quaternion.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = quaternion.inl; sourceTree = "<group>"; };
+		1B6DF2A62608CA0A0078DF34 /* defs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = defs.h; sourceTree = "<group>"; };
+		1B6DF2A72608CA0A0078DF34 /* Subdivision.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Subdivision.h; sourceTree = "<group>"; };
+		1B6DF2A82608CA0A0078DF34 /* ParsingUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParsingUtils.h; sourceTree = "<group>"; };
+		1B6DF2A92608CA0A0078DF34 /* version.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = version.h; sourceTree = "<group>"; };
+		1B6DF2AA2608CA0A0078DF34 /* XMLTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLTools.h; sourceTree = "<group>"; };
+		1B6DF2AB2608CA0A0078DF34 /* StringComparison.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringComparison.h; sourceTree = "<group>"; };
+		1B6DF2AC2608CA0A0078DF34 /* matrix4x4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = matrix4x4.h; sourceTree = "<group>"; };
+		1B6DF2AD2608CA0A0078DF34 /* Importer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Importer.hpp; sourceTree = "<group>"; };
+		1B6DF2AE2608CA0A0078DF34 /* cfileio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cfileio.h; sourceTree = "<group>"; };
+		1B6DF2AF2608CA0A0078DF34 /* GenericProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GenericProperty.h; sourceTree = "<group>"; };
+		1B6DF2B02608CA0A0078DF34 /* RemoveComments.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RemoveComments.h; sourceTree = "<group>"; };
+		1B6DF2B12608CA0A0078DF34 /* vector2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vector2.h; sourceTree = "<group>"; };
+		1B6DF2B22608CA0A0078DF34 /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
+		1B6DF2B32608CA0A0078DF34 /* light.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = light.h; sourceTree = "<group>"; };
+		1B6DF2B42608CA0A0078DF34 /* types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = types.h; sourceTree = "<group>"; };
+		1B6DF2B52608CA0A0078DF34 /* irrXMLWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = irrXMLWrapper.h; sourceTree = "<group>"; };
+		1B6DF2B62608CA0A0078DF34 /* MathFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MathFunctions.h; sourceTree = "<group>"; };
+		1B6DF2B72608CA0A0078DF34 /* cimport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cimport.h; sourceTree = "<group>"; };
+		1B6DF2B82608CA0A0078DF34 /* camera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = camera.h; sourceTree = "<group>"; };
+		1B6DF2B92608CA0A0078DF34 /* matrix3x3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = matrix3x3.h; sourceTree = "<group>"; };
+		1B6DF2BA2608CA0A0078DF34 /* color4.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = color4.inl; sourceTree = "<group>"; };
+		1B6DF2BB2608CA0A0078DF34 /* StringUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringUtils.h; sourceTree = "<group>"; };
+		1B6DF2BC2608CA0A0078DF34 /* DefaultIOStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DefaultIOStream.h; sourceTree = "<group>"; };
+		1B6DF2BD2608CA0A0078DF34 /* BaseImporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseImporter.h; sourceTree = "<group>"; };
+		1B6DF2BE2608CA0A0078DF34 /* SceneCombiner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SceneCombiner.h; sourceTree = "<group>"; };
+		1B6DF2BF2608CA0A0078DF34 /* material.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = material.h; sourceTree = "<group>"; };
+		1B6DF2C02608CA0A0078DF34 /* ai_assert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ai_assert.h; sourceTree = "<group>"; };
+		1B6DF2C12608CA0A0078DF34 /* NullLogger.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = NullLogger.hpp; sourceTree = "<group>"; };
+		1B6DF2C22608CA0A0078DF34 /* SmoothingGroups.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmoothingGroups.h; sourceTree = "<group>"; };
+		1B6DF2C32608CA0A0078DF34 /* quaternion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = quaternion.h; sourceTree = "<group>"; };
+		1B6DF2C42608CA0A0078DF34 /* LogAux.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogAux.h; sourceTree = "<group>"; };
+		1B6DF2C52608CA0A0078DF34 /* config.h.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = config.h.in; sourceTree = "<group>"; };
+		1B6DF2C62608CA0A0078DF34 /* DefaultLogger.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = DefaultLogger.hpp; sourceTree = "<group>"; };
+		1B6DF2C72608CA0A0078DF34 /* material.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = material.inl; sourceTree = "<group>"; };
+		1B6DF2C82608CA0A0078DF34 /* metadata.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = metadata.h; sourceTree = "<group>"; };
+		1B6DF2C92608CA0A0078DF34 /* mesh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mesh.h; sourceTree = "<group>"; };
+		1B6DF2CA2608CA0A0078DF34 /* LineSplitter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LineSplitter.h; sourceTree = "<group>"; };
+		1B6DF2CB2608CA0A0078DF34 /* CreateAnimMesh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateAnimMesh.h; sourceTree = "<group>"; };
+		1B6DF2CC2608CA0A0078DF34 /* Defines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Defines.h; sourceTree = "<group>"; };
+		1B6DF2CD2608CA0A0078DF34 /* .editorconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .editorconfig; sourceTree = "<group>"; };
+		1B6DF2CE2608CA0A0078DF34 /* SpatialSort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpatialSort.h; sourceTree = "<group>"; };
+		1B6DF2CF2608CA0A0078DF34 /* MemoryIOWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemoryIOWrapper.h; sourceTree = "<group>"; };
+		1B6DF2D02608CA0A0078DF34 /* Exporter.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Exporter.hpp; sourceTree = "<group>"; };
+		1B6DF2D12608CA0A0078DF34 /* vector2.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = vector2.inl; sourceTree = "<group>"; };
+		1B6DF2D22608CA0A0078DF34 /* matrix4x4.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = matrix4x4.inl; sourceTree = "<group>"; };
+		1B6DF2D32608CA0A0078DF34 /* vector3.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = vector3.inl; sourceTree = "<group>"; };
+		1B6DF2D42608CA0A0078DF34 /* Macros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Macros.h; sourceTree = "<group>"; };
+		1B6DF2D52608CA0A0078DF34 /* ProgressHandler.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ProgressHandler.hpp; sourceTree = "<group>"; };
+		1B6DF2D62608CA0A0078DF34 /* cexport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cexport.h; sourceTree = "<group>"; };
+		1B6DF2D72608CA0A0078DF34 /* StreamWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StreamWriter.h; sourceTree = "<group>"; };
+		1B6DF2D82608CA0A0078DF34 /* color4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = color4.h; sourceTree = "<group>"; };
+		1B6DF2D92608CA0A0078DF34 /* StandardShapes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StandardShapes.h; sourceTree = "<group>"; };
+		1B6DF2DA2608CA0A0078DF34 /* pbrmaterial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pbrmaterial.h; sourceTree = "<group>"; };
+		1B6DF2DB2608CA0A0078DF34 /* fast_atof.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fast_atof.h; sourceTree = "<group>"; };
+		1B6DF2DC2608CA0A0078DF34 /* anim.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = anim.h; sourceTree = "<group>"; };
+		1B6DF2DD2608CA0A0078DF34 /* postprocess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = postprocess.h; sourceTree = "<group>"; };
+		1B6DF2DE2608CA0A0078DF34 /* Exceptional.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Exceptional.h; sourceTree = "<group>"; };
+		1B6DF2DF2608CA0A0078DF34 /* texture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = texture.h; sourceTree = "<group>"; };
+		1B6DF2E02608CA0A0078DF34 /* ZipArchiveIOSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZipArchiveIOSystem.h; sourceTree = "<group>"; };
+		1B6DF2E12608CA0A0078DF34 /* BlobIOSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlobIOSystem.h; sourceTree = "<group>"; };
+		1B6DF2E22608CA0A0078DF34 /* matrix3x3.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = matrix3x3.inl; sourceTree = "<group>"; };
+		1B6DF2E32608CA0A0078DF34 /* qnan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = qnan.h; sourceTree = "<group>"; };
+		1B6DF2E62608CA0A0078DF34 /* AndroidJNIIOSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AndroidJNIIOSystem.h; sourceTree = "<group>"; };
+		1B6DF2E72608CA0A0078DF34 /* Profiler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Profiler.h; sourceTree = "<group>"; };
+		1B6DF2E82608CA0A0078DF34 /* Bitmap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bitmap.h; sourceTree = "<group>"; };
+		1B6DF2E92608CA0A0078DF34 /* importerdesc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = importerdesc.h; sourceTree = "<group>"; };
+		1B6DF2EA2608CA0A0078DF34 /* TinyFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TinyFormatter.h; sourceTree = "<group>"; };
+		1B6DF2EC2608CA0A0078DF34 /* poppack1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = poppack1.h; sourceTree = "<group>"; };
+		1B6DF2ED2608CA0A0078DF34 /* pstdint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pstdint.h; sourceTree = "<group>"; };
+		1B6DF2EE2608CA0A0078DF34 /* pushpack1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pushpack1.h; sourceTree = "<group>"; };
+		1B6DF2EF2608CA0A0078DF34 /* IOStreamBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOStreamBuffer.h; sourceTree = "<group>"; };
+		1B6DF2F02608CA0A0078DF34 /* Hash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hash.h; sourceTree = "<group>"; };
+		1B6DF2F12608CA0A0078DF34 /* SGSpatialSort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGSpatialSort.h; sourceTree = "<group>"; };
+		1B6DF2F22608CA0A0078DF34 /* aabb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aabb.h; sourceTree = "<group>"; };
+		1B6DF2F32608CA0A0078DF34 /* SmoothingGroups.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SmoothingGroups.inl; sourceTree = "<group>"; };
+		1B6DF2F42608CA0A0078DF34 /* vector3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vector3.h; sourceTree = "<group>"; };
+		1B6DF2F52608CA0A0078DF34 /* DefaultIOSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DefaultIOSystem.h; sourceTree = "<group>"; };
+		1B6DF2F62608CA0A0078DF34 /* scene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scene.h; sourceTree = "<group>"; };
+		1B6DF2F72608CA0A0078DF34 /* LogStream.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = LogStream.hpp; sourceTree = "<group>"; };
+		1B6DF3042608CA360078DF34 /* Mesh.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Mesh.cpp; sourceTree = "<group>"; };
+		1B6DF3052608CA360078DF34 /* Mesh.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Mesh.hpp; sourceTree = "<group>"; };
+		1B6DF3062608CA370078DF34 /* Model.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Model.cpp; sourceTree = "<group>"; };
+		1B6DF3072608CA370078DF34 /* Model.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Model.hpp; sourceTree = "<group>"; };
+		1B6DF30C2608CB1A0078DF34 /* stb_image.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = stb_image.cpp; sourceTree = "<group>"; };
+		1B6DF30D2608CB1A0078DF34 /* stb_image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stb_image.h; sourceTree = "<group>"; };
+		1B6DF311260992BE0078DF34 /* Camera.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Camera.hpp; sourceTree = "<group>"; };
+		1B6DF312260992BE0078DF34 /* Camera.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Camera.cpp; sourceTree = "<group>"; };
+		1B6DF3152609961B0078DF34 /* Sphere.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Sphere.mm; sourceTree = "<group>"; };
+		1B6DF3162609961B0078DF34 /* Sphere.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sphere.h; sourceTree = "<group>"; };
+		1B6DF34A2609BF0C0078DF34 /* glsl.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = glsl.frag; sourceTree = "<group>"; };
+		1B6DF34B2609BF0C0078DF34 /* glsl.vert */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = glsl.vert; sourceTree = "<group>"; };
+		1B6DF34F2609C0810078DF34 /* sphere.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = sphere.frag; sourceTree = "<group>"; };
+		1B6DF3502609C0810078DF34 /* sphere.vert */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = sphere.vert; sourceTree = "<group>"; };
+		1B6DF3542609C1630078DF34 /* planet.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = planet.obj; sourceTree = "<group>"; };
+		1B6DF3782609E2AA0078DF34 /* main.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.mtl; sourceTree = "<group>"; };
+		1B6DF3792609E2AA0078DF34 /* main.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.obj; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1B6DF0632608C8C90078DF34 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B6DF29C2608C9F80078DF34 /* libassimp-fat.a in Frameworks */,
+				1B6DF29A2608C9F80078DF34 /* libzlibstatic-fat.a in Frameworks */,
+				1B6DF29B2608C9F80078DF34 /* libIrrXML-fat.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1B6DF05D2608C8C90078DF34 = {
+			isa = PBXGroup;
+			children = (
+				1B6DF0682608C8C90078DF34 /* ModelRead */,
+				1B6DF0672608C8C90078DF34 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1B6DF0672608C8C90078DF34 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1B6DF0662608C8C90078DF34 /* ModelRead.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1B6DF0682608C8C90078DF34 /* ModelRead */ = {
+			isa = PBXGroup;
+			children = (
+				1B6DF0872608C93E0078DF34 /* Opengl */,
+				1B6DF0692608C8C90078DF34 /* AppDelegate.h */,
+				1B6DF06A2608C8C90078DF34 /* AppDelegate.m */,
+				1B6DF06C2608C8C90078DF34 /* SceneDelegate.h */,
+				1B6DF06D2608C8C90078DF34 /* SceneDelegate.m */,
+				1B6DF06F2608C8C90078DF34 /* ViewController.h */,
+				1B6DF0702608C8C90078DF34 /* ViewController.m */,
+				1B6DF0722608C8C90078DF34 /* Main.storyboard */,
+				1B6DF3162609961B0078DF34 /* Sphere.h */,
+				1B6DF3152609961B0078DF34 /* Sphere.mm */,
+				1B6DF3542609C1630078DF34 /* planet.obj */,
+				1B6DF3782609E2AA0078DF34 /* main.mtl */,
+				1B6DF3792609E2AA0078DF34 /* main.obj */,
+				1B6DF34F2609C0810078DF34 /* sphere.frag */,
+				1B6DF3502609C0810078DF34 /* sphere.vert */,
+				1B6DF34A2609BF0C0078DF34 /* glsl.frag */,
+				1B6DF34B2609BF0C0078DF34 /* glsl.vert */,
+				1B6DF0752608C8CC0078DF34 /* Assets.xcassets */,
+				1B6DF0772608C8CC0078DF34 /* LaunchScreen.storyboard */,
+				1B6DF07A2608C8CC0078DF34 /* Info.plist */,
+				1B6DF07B2608C8CC0078DF34 /* main.m */,
+			);
+			path = ModelRead;
+			sourceTree = "<group>";
+		};
+		1B6DF0872608C93E0078DF34 /* Opengl */ = {
+			isa = PBXGroup;
+			children = (
+				1B6DF310260992AC0078DF34 /* Camera */,
+				1B6DF3032608CA290078DF34 /* Model */,
+				1B6DF2962608C9BB0078DF34 /* assimp */,
+				1B6DF0882608C93E0078DF34 /* Shader.cpp */,
+				1B6DF0892608C93E0078DF34 /* Shader.hpp */,
+				1B6DF08A2608C93E0078DF34 /* glm */,
+			);
+			path = Opengl;
+			sourceTree = "<group>";
+		};
+		1B6DF08A2608C93E0078DF34 /* glm */ = {
+			isa = PBXGroup;
+			children = (
+				1B6DF08B2608C93E0078DF34 /* vec4.hpp */,
+				1B6DF08C2608C93E0078DF34 /* integer.hpp */,
+				1B6DF08D2608C93E0078DF34 /* vector_relational.hpp */,
+				1B6DF08E2608C93E0078DF34 /* mat2x3.hpp */,
+				1B6DF08F2608C93E0078DF34 /* mat4x4.hpp */,
+				1B6DF0902608C93E0078DF34 /* mat2x2.hpp */,
+				1B6DF0912608C93E0078DF34 /* exponential.hpp */,
+				1B6DF0922608C93E0078DF34 /* vec2.hpp */,
+				1B6DF0932608C93E0078DF34 /* CMakeLists.txt */,
+				1B6DF0942608C93E0078DF34 /* vec3.hpp */,
+				1B6DF0952608C93E0078DF34 /* fwd.hpp */,
+				1B6DF0962608C93E0078DF34 /* mat4x3.hpp */,
+				1B6DF0972608C93E0078DF34 /* mat4x2.hpp */,
+				1B6DF0982608C93E0078DF34 /* mat2x4.hpp */,
+				1B6DF0992608C93E0078DF34 /* packing.hpp */,
+				1B6DF09A2608C93E0078DF34 /* mat3x3.hpp */,
+				1B6DF09B2608C93E0078DF34 /* mat3x2.hpp */,
+				1B6DF09C2608C93E0078DF34 /* ext */,
+				1B6DF1182608C93F0078DF34 /* simd */,
+				1B6DF1222608C93F0078DF34 /* mat3x4.hpp */,
+				1B6DF1232608C93F0078DF34 /* matrix.hpp */,
+				1B6DF1242608C93F0078DF34 /* glm.hpp */,
+				1B6DF1252608C93F0078DF34 /* trigonometric.hpp */,
+				1B6DF1262608C93F0078DF34 /* geometric.hpp */,
+				1B6DF1272608C93F0078DF34 /* detail */,
+				1B6DF1652608C93F0078DF34 /* ext.hpp */,
+				1B6DF1662608C93F0078DF34 /* gtc */,
+				1B6DF18D2608C93F0078DF34 /* common.hpp */,
+				1B6DF18E2608C93F0078DF34 /* gtx */,
+			);
+			path = glm;
+			sourceTree = "<group>";
+		};
+		1B6DF09C2608C93E0078DF34 /* ext */ = {
+			isa = PBXGroup;
+			children = (
+				1B6DF09D2608C93E0078DF34 /* matrix_double3x2_precision.hpp */,
+				1B6DF09E2608C93E0078DF34 /* matrix_float2x4.hpp */,
+				1B6DF09F2608C93E0078DF34 /* vector_bool2.hpp */,
+				1B6DF0A02608C93E0078DF34 /* quaternion_double_precision.hpp */,
+				1B6DF0A12608C93E0078DF34 /* matrix_float4x2.hpp */,
+				1B6DF0A22608C93E0078DF34 /* matrix_float4x3.hpp */,
+				1B6DF0A32608C93E0078DF34 /* vector_bool3.hpp */,
+				1B6DF0A42608C93E0078DF34 /* vector_relational.hpp */,
+				1B6DF0A52608C93E0078DF34 /* vector_bool1.hpp */,
+				1B6DF0A62608C93E0078DF34 /* quaternion_common.inl */,
+				1B6DF0A72608C93E0078DF34 /* vector_uint2_precision.hpp */,
+				1B6DF0A82608C93E0078DF34 /* vector_float1_precision.hpp */,
+				1B6DF0A92608C93E0078DF34 /* matrix_float2x3_precision.hpp */,
+				1B6DF0AA2608C93E0078DF34 /* matrix_float2x2.hpp */,
+				1B6DF0AB2608C93E0078DF34 /* matrix_common.hpp */,
+				1B6DF0AC2608C93E0078DF34 /* vector_bool4.hpp */,
+				1B6DF0AD2608C93E0078DF34 /* matrix_float2x4_precision.hpp */,
+				1B6DF0AE2608C93E0078DF34 /* matrix_float4x4.hpp */,
+				1B6DF0AF2608C93E0078DF34 /* vector_uint1_precision.hpp */,
+				1B6DF0B02608C93E0078DF34 /* matrix_float2x3.hpp */,
+				1B6DF0B12608C93E0078DF34 /* matrix_clip_space.hpp */,
+				1B6DF0B22608C93E0078DF34 /* scalar_integer.hpp */,
+				1B6DF0B32608C93E0078DF34 /* vector_float2_precision.hpp */,
+				1B6DF0B42608C93E0078DF34 /* quaternion_exponential.inl */,
+				1B6DF0B52608C93E0078DF34 /* scalar_common.hpp */,
+				1B6DF0B62608C93E0078DF34 /* quaternion_transform.inl */,
+				1B6DF0B72608C93E0078DF34 /* matrix_double4x2_precision.hpp */,
+				1B6DF0B82608C93E0078DF34 /* matrix_clip_space.inl */,
+				1B6DF0B92608C93E0078DF34 /* vector_double4_precision.hpp */,
+				1B6DF0BA2608C93E0078DF34 /* matrix_float3x4_precision.hpp */,
+				1B6DF0BB2608C93E0078DF34 /* scalar_integer.inl */,
+				1B6DF0BC2608C93E0078DF34 /* vector_uint3.hpp */,
+				1B6DF0BD2608C93E0078DF34 /* matrix_float4x3_precision.hpp */,
+				1B6DF0BE2608C93E0078DF34 /* matrix_common.inl */,
+				1B6DF0BF2608C93E0078DF34 /* vector_uint2.hpp */,
+				1B6DF0C02608C93E0078DF34 /* quaternion_float_precision.hpp */,
+				1B6DF0C12608C93E0078DF34 /* vector_int1_precision.hpp */,
+				1B6DF0C22608C93E0078DF34 /* matrix_float3x4.hpp */,
+				1B6DF0C32608C93E0078DF34 /* quaternion_transform.hpp */,
+				1B6DF0C42608C93E0078DF34 /* vector_bool4_precision.hpp */,
+				1B6DF0C52608C93E0078DF34 /* vector_uint1.hpp */,
+				1B6DF0C62608C93E0078DF34 /* matrix_transform.hpp */,
+				1B6DF0C72608C93E0078DF34 /* scalar_common.inl */,
+				1B6DF0C82608C93E0078DF34 /* quaternion_exponential.hpp */,
+				1B6DF0C92608C93E0078DF34 /* vector_relational.inl */,
+				1B6DF0CA2608C93E0078DF34 /* vector_bool3_precision.hpp */,
+				1B6DF0CB2608C93E0078DF34 /* matrix_double2x2_precision.hpp */,
+				1B6DF0CC2608C93E0078DF34 /* quaternion_float.hpp */,
+				1B6DF0CD2608C93E0078DF34 /* vector_int2_precision.hpp */,
+				1B6DF0CE2608C93E0078DF34 /* scalar_relational_ext.inl */,
+				1B6DF0CF2608C93E0078DF34 /* vector_uint4.hpp */,
+				1B6DF0D02608C93E0078DF34 /* matrix_float3x2.hpp */,
+				1B6DF0D12608C93E0078DF34 /* vector_double3_precision.hpp */,
+				1B6DF0D22608C93E0078DF34 /* quaternion_common.hpp */,
+				1B6DF0D32608C93E0078DF34 /* matrix_float3x3_precision.hpp */,
+				1B6DF0D42608C93E0078DF34 /* matrix_float3x3.hpp */,
+				1B6DF0D52608C93E0078DF34 /* scalar_int_sized.hpp */,
+				1B6DF0D62608C93E0078DF34 /* matrix_float4x4_precision.hpp */,
+				1B6DF0D72608C93E0078DF34 /* matrix_double4x2.hpp */,
+				1B6DF0D82608C93E0078DF34 /* vector_int1.hpp */,
+				1B6DF0D92608C93E0078DF34 /* vector_float3.hpp */,
+				1B6DF0DA2608C93E0078DF34 /* matrix_double2x4.hpp */,
+				1B6DF0DB2608C93E0078DF34 /* scalar_ulp.hpp */,
+				1B6DF0DC2608C93E0078DF34 /* quaternion_geometric.hpp */,
+				1B6DF0DD2608C93E0078DF34 /* vector_int3_precision.hpp */,
+				1B6DF0DE2608C93E0078DF34 /* vector_float2.hpp */,
+				1B6DF0DF2608C93E0078DF34 /* matrix_double2x3_precision.hpp */,
+				1B6DF0E02608C93E0078DF34 /* vector_bool2_precision.hpp */,
+				1B6DF0E12608C93E0078DF34 /* quaternion_double.hpp */,
+				1B6DF0E22608C93E0078DF34 /* matrix_double4x3.hpp */,
+				1B6DF0E32608C93E0078DF34 /* quaternion_common_simd.inl */,
+				1B6DF0E42608C93E0078DF34 /* vector_int2.hpp */,
+				1B6DF0E52608C93E0078DF34 /* vector_double2_precision.hpp */,
+				1B6DF0E62608C93E0078DF34 /* matrix_float3x2_precision.hpp */,
+				1B6DF0E72608C93E0078DF34 /* matrix_relational.hpp */,
+				1B6DF0E82608C93E0078DF34 /* vector_integer.hpp */,
+				1B6DF0E92608C93E0078DF34 /* scalar_relational.hpp */,
+				1B6DF0EA2608C93E0078DF34 /* vector_float1.hpp */,
+				1B6DF0EB2608C93E0078DF34 /* vector_int3.hpp */,
+				1B6DF0EC2608C93E0078DF34 /* scalar_constants.inl */,
+				1B6DF0ED2608C93E0078DF34 /* matrix_double4x4.hpp */,
+				1B6DF0EE2608C93E0078DF34 /* scalar_uint_sized.hpp */,
+				1B6DF0EF2608C93E0078DF34 /* vector_double1_precision.hpp */,
+				1B6DF0F02608C93E0078DF34 /* matrix_double2x2.hpp */,
+				1B6DF0F12608C93E0078DF34 /* matrix_float4x2_precision.hpp */,
+				1B6DF0F22608C93E0078DF34 /* matrix_double2x3.hpp */,
+				1B6DF0F32608C93E0078DF34 /* matrix_projection.hpp */,
+				1B6DF0F42608C93E0078DF34 /* vector_float4.hpp */,
+				1B6DF0F52608C93E0078DF34 /* vector_common.inl */,
+				1B6DF0F62608C93E0078DF34 /* vector_int4_precision.hpp */,
+				1B6DF0F72608C93E0078DF34 /* matrix_double2x4_precision.hpp */,
+				1B6DF0F82608C93E0078DF34 /* vector_int4.hpp */,
+				1B6DF0F92608C93E0078DF34 /* quaternion_relational.hpp */,
+				1B6DF0FA2608C93E0078DF34 /* quaternion_trigonometric.hpp */,
+				1B6DF0FB2608C93F0078DF34 /* vector_bool1_precision.hpp */,
+				1B6DF0FC2608C93F0078DF34 /* vector_ulp.hpp */,
+				1B6DF0FD2608C93F0078DF34 /* vector_float3_precision.hpp */,
+				1B6DF0FE2608C93F0078DF34 /* vector_uint4_precision.hpp */,
+				1B6DF0FF2608C93F0078DF34 /* matrix_projection.inl */,
+				1B6DF1002608C93F0078DF34 /* vector_common.hpp */,
+				1B6DF1012608C93F0078DF34 /* scalar_constants.hpp */,
+				1B6DF1022608C93F0078DF34 /* matrix_double3x4.hpp */,
+				1B6DF1032608C93F0078DF34 /* quaternion_trigonometric.inl */,
+				1B6DF1042608C93F0078DF34 /* matrix_double4x3_precision.hpp */,
+				1B6DF1052608C93F0078DF34 /* vector_ulp.inl */,
+				1B6DF1062608C93F0078DF34 /* matrix_double3x4_precision.hpp */,
+				1B6DF1072608C93F0078DF34 /* quaternion_relational.inl */,
+				1B6DF1082608C93F0078DF34 /* vector_double4.hpp */,
+				1B6DF1092608C93F0078DF34 /* matrix_transform_ext.inl */,
+				1B6DF10A2608C93F0078DF34 /* vector_double1.hpp */,
+				1B6DF10B2608C93F0078DF34 /* matrix_double4x4_precision.hpp */,
+				1B6DF10C2608C93F0078DF34 /* scalar_ulp.inl */,
+				1B6DF10D2608C93F0078DF34 /* quaternion_geometric.inl */,
+				1B6DF10E2608C93F0078DF34 /* matrix_double3x3_precision.hpp */,
+				1B6DF10F2608C93F0078DF34 /* matrix_double3x2.hpp */,
+				1B6DF1102608C93F0078DF34 /* matrix_float2x2_precision.hpp */,
+				1B6DF1112608C93F0078DF34 /* vector_integer.inl */,
+				1B6DF1122608C93F0078DF34 /* vector_double3.hpp */,
+				1B6DF1132608C93F0078DF34 /* vector_float4_precision.hpp */,
+				1B6DF1142608C93F0078DF34 /* vector_double2.hpp */,
+				1B6DF1152608C93F0078DF34 /* matrix_relational.inl */,
+				1B6DF1162608C93F0078DF34 /* vector_uint3_precision.hpp */,
+				1B6DF1172608C93F0078DF34 /* matrix_double3x3.hpp */,
+			);
+			path = ext;
+			sourceTree = "<group>";
+		};
+		1B6DF1182608C93F0078DF34 /* simd */ = {
+			isa = PBXGroup;
+			children = (
+				1B6DF1192608C93F0078DF34 /* vector_relational.h */,
+				1B6DF11A2608C93F0078DF34 /* matrix.h */,
+				1B6DF11B2608C93F0078DF34 /* packing.h */,
+				1B6DF11C2608C93F0078DF34 /* common.h */,
+				1B6DF11D2608C93F0078DF34 /* trigonometric.h */,
+				1B6DF11E2608C93F0078DF34 /* geometric.h */,
+				1B6DF11F2608C93F0078DF34 /* integer.h */,
+				1B6DF1202608C93F0078DF34 /* platform.h */,
+				1B6DF1212608C93F0078DF34 /* exponential.h */,
+			);
+			path = simd;
+			sourceTree = "<group>";
+		};
+		1B6DF1272608C93F0078DF34 /* detail */ = {
+			isa = PBXGroup;
+			children = (
+				1B6DF1282608C93F0078DF34 /* func_exponential.inl */,
+				1B6DF1292608C93F0078DF34 /* func_integer_simd.inl */,
+				1B6DF12A2608C93F0078DF34 /* func_vector_relational.inl */,
+				1B6DF12B2608C93F0078DF34 /* func_packing.inl */,
+				1B6DF12C2608C93F0078DF34 /* _fixes.hpp */,
+				1B6DF12D2608C93F0078DF34 /* type_quat.inl */,
+				1B6DF12E2608C93F0078DF34 /* type_half.inl */,
+				1B6DF12F2608C93F0078DF34 /* func_vector_relational_simd.inl */,
+				1B6DF1302608C93F0078DF34 /* qualifier.hpp */,
+				1B6DF1312608C93F0078DF34 /* func_matrix_simd.inl */,
+				1B6DF1322608C93F0078DF34 /* _noise.hpp */,
+				1B6DF1332608C93F0078DF34 /* type_half.hpp */,
+				1B6DF1342608C93F0078DF34 /* _features.hpp */,
+				1B6DF1352608C93F0078DF34 /* func_integer.inl */,
+				1B6DF1362608C93F0078DF34 /* _vectorize.hpp */,
+				1B6DF1372608C93F0078DF34 /* func_geometric.inl */,
+				1B6DF1382608C93F0078DF34 /* type_quat.hpp */,
+				1B6DF1392608C93F0078DF34 /* func_common.inl */,
+				1B6DF13A2608C93F0078DF34 /* type_quat_simd.inl */,
+				1B6DF13B2608C93F0078DF34 /* func_trigonometric.inl */,
+				1B6DF13C2608C93F0078DF34 /* type_mat2x4.inl */,
+				1B6DF13D2608C93F0078DF34 /* type_mat4x2.inl */,
+				1B6DF13E2608C93F0078DF34 /* _swizzle.hpp */,
+				1B6DF13F2608C93F0078DF34 /* type_mat4x3.inl */,
+				1B6DF1402608C93F0078DF34 /* func_packing_simd.inl */,
+				1B6DF1412608C93F0078DF34 /* type_vec4.inl */,
+				1B6DF1422608C93F0078DF34 /* func_trigonometric_simd.inl */,
+				1B6DF1432608C93F0078DF34 /* type_mat3x3.hpp */,
+				1B6DF1442608C93F0078DF34 /* type_mat3x2.hpp */,
+				1B6DF1452608C93F0078DF34 /* compute_common.hpp */,
+				1B6DF1462608C93F0078DF34 /* setup.hpp */,
+				1B6DF1472608C93F0078DF34 /* type_mat2x2.inl */,
+				1B6DF1482608C93F0078DF34 /* type_vec1.inl */,
+				1B6DF1492608C93F0078DF34 /* func_common_simd.inl */,
+				1B6DF14A2608C93F0078DF34 /* type_mat4x4.inl */,
+				1B6DF14B2608C93F0078DF34 /* func_geometric_simd.inl */,
+				1B6DF14C2608C93F0078DF34 /* type_mat2x3.inl */,
+				1B6DF14D2608C93F0078DF34 /* type_vec2.inl */,
+				1B6DF14E2608C93F0078DF34 /* glm.cpp */,
+				1B6DF14F2608C93F0078DF34 /* type_mat3x4.hpp */,
+				1B6DF1502608C93F0078DF34 /* type_vec3.inl */,
+				1B6DF1512608C93F0078DF34 /* type_mat4x4_simd.inl */,
+				1B6DF1522608C93F0078DF34 /* type_mat2x3.hpp */,
+				1B6DF1532608C93F0078DF34 /* type_mat4x4.hpp */,
+				1B6DF1542608C93F0078DF34 /* func_matrix.inl */,
+				1B6DF1552608C93F0078DF34 /* type_mat2x2.hpp */,
+				1B6DF1562608C93F0078DF34 /* type_vec1.hpp */,
+				1B6DF1572608C93F0078DF34 /* _swizzle_func.hpp */,
+				1B6DF1582608C93F0078DF34 /* type_vec3.hpp */,
+				1B6DF1592608C93F0078DF34 /* compute_vector_relational.hpp */,
+				1B6DF15A2608C93F0078DF34 /* type_vec4_simd.inl */,
+				1B6DF15B2608C93F0078DF34 /* type_mat3x4.inl */,
+				1B6DF15C2608C93F0078DF34 /* func_exponential_simd.inl */,
+				1B6DF15D2608C93F0078DF34 /* type_vec2.hpp */,
+				1B6DF15E2608C93F0078DF34 /* type_mat4x3.hpp */,
+				1B6DF15F2608C93F0078DF34 /* type_mat4x2.hpp */,
+				1B6DF1602608C93F0078DF34 /* type_float.hpp */,
+				1B6DF1612608C93F0078DF34 /* type_mat2x4.hpp */,
+				1B6DF1622608C93F0078DF34 /* type_mat3x2.inl */,
+				1B6DF1632608C93F0078DF34 /* type_mat3x3.inl */,
+				1B6DF1642608C93F0078DF34 /* type_vec4.hpp */,
+			);
+			path = detail;
+			sourceTree = "<group>";
+		};
+		1B6DF1662608C93F0078DF34 /* gtc */ = {
+			isa = PBXGroup;
+			children = (
+				1B6DF1672608C93F0078DF34 /* color_space_gtc.inl */,
+				1B6DF1682608C93F0078DF34 /* integer.hpp */,
+				1B6DF1692608C93F0078DF34 /* matrix_integer.hpp */,
+				1B6DF16A2608C93F0078DF34 /* matrix_inverse.inl */,
+				1B6DF16B2608C93F0078DF34 /* packing.inl */,
+				1B6DF16C2608C93F0078DF34 /* vec1.hpp */,
+				1B6DF16D2608C93F0078DF34 /* type_precision.inl */,
+				1B6DF16E2608C93F0078DF34 /* bitfield.inl */,
+				1B6DF16F2608C93F0078DF34 /* ulp.hpp */,
+				1B6DF1702608C93F0078DF34 /* round.inl */,
+				1B6DF1712608C93F0078DF34 /* packing.hpp */,
+				1B6DF1722608C93F0078DF34 /* quaternion_simd.inl */,
+				1B6DF1732608C93F0078DF34 /* ulp.inl */,
+				1B6DF1742608C93F0078DF34 /* round.hpp */,
+				1B6DF1752608C93F0078DF34 /* matrix_transform.hpp */,
+				1B6DF1762608C93F0078DF34 /* type_precision.hpp */,
+				1B6DF1772608C93F0078DF34 /* bitfield.hpp */,
+				1B6DF1782608C93F0078DF34 /* quaternion.hpp */,
+				1B6DF1792608C93F0078DF34 /* matrix_inverse.hpp */,
+				1B6DF17A2608C93F0078DF34 /* epsilon.inl */,
+				1B6DF17B2608C93F0078DF34 /* random.hpp */,
+				1B6DF17C2608C93F0078DF34 /* integer_gtc.inl */,
+				1B6DF17D2608C93F0078DF34 /* matrix_access.inl */,
+				1B6DF17E2608C93F0078DF34 /* type_ptr.hpp */,
+				1B6DF17F2608C93F0078DF34 /* reciprocal.inl */,
+				1B6DF1802608C93F0078DF34 /* constants.hpp */,
+				1B6DF1812608C93F0078DF34 /* color_space.hpp */,
+				1B6DF1822608C93F0078DF34 /* quaternion_gtc.inl */,
+				1B6DF1832608C93F0078DF34 /* noise.hpp */,
+				1B6DF1842608C93F0078DF34 /* matrix_transform_gtc.inl */,
+				1B6DF1852608C93F0078DF34 /* noise.inl */,
+				1B6DF1862608C93F0078DF34 /* matrix_access.hpp */,
+				1B6DF1872608C93F0078DF34 /* random.inl */,
+				1B6DF1882608C93F0078DF34 /* epsilon.hpp */,
+				1B6DF1892608C93F0078DF34 /* constants.inl */,
+				1B6DF18A2608C93F0078DF34 /* reciprocal.hpp */,
+				1B6DF18B2608C93F0078DF34 /* type_ptr.inl */,
+				1B6DF18C2608C93F0078DF34 /* type_aligned.hpp */,
+			);
+			path = gtc;
+			sourceTree = "<group>";
+		};
+		1B6DF18E2608C93F0078DF34 /* gtx */ = {
+			isa = PBXGroup;
+			children = (
+				1B6DF18F2608C93F0078DF34 /* vector_angle.hpp */,
+				1B6DF1902608C93F0078DF34 /* log_base.inl */,
+				1B6DF1912608C93F0078DF34 /* matrix_query.inl */,
+				1B6DF1922608C93F0078DF34 /* extend.inl */,
+				1B6DF1932608C93F0078DF34 /* integer.hpp */,
+				1B6DF1942608C93F0078DF34 /* associated_min_max.inl */,
+				1B6DF1952608C93F0078DF34 /* matrix_transform_2d.inl */,
+				1B6DF1962608C93F0078DF34 /* hash.hpp */,
+				1B6DF1972608C93F0078DF34 /* rotate_vector.hpp */,
+				1B6DF1982608C93F0078DF34 /* matrix_interpolation.hpp */,
+				1B6DF1992608C93F0078DF34 /* functions.hpp */,
+				1B6DF19A2608C93F0078DF34 /* exterior_product.inl */,
+				1B6DF19B2608C93F0078DF34 /* gradient_paint.inl */,
+				1B6DF19C2608C93F0078DF34 /* string_cast.hpp */,
+				1B6DF19D2608C93F0078DF34 /* color_space_YCoCg.hpp */,
+				1B6DF19E2608C93F0078DF34 /* type_trait.inl */,
+				1B6DF19F2608C93F0078DF34 /* extended_min_max.hpp */,
+				1B6DF1A02608C93F0078DF34 /* euler_angles.inl */,
+				1B6DF1A12608C93F0078DF34 /* fast_square_root.hpp */,
+				1B6DF1A22608C93F0078DF34 /* raw_data.inl */,
+				1B6DF1A32608C93F0078DF34 /* matrix_cross_product.inl */,
+				1B6DF1A42608C93F0078DF34 /* spline.hpp */,
+				1B6DF1A52608C93F0078DF34 /* fast_trigonometry.hpp */,
+				1B6DF1A62608C93F0078DF34 /* optimum_pow.inl */,
+				1B6DF1A72608C93F0078DF34 /* dual_quaternion.hpp */,
+				1B6DF1A82608C9400078DF34 /* closest_point.hpp */,
+				1B6DF1A92608C9400078DF34 /* number_precision.inl */,
+				1B6DF1AA2608C9400078DF34 /* mixed_product.inl */,
+				1B6DF1AB2608C9400078DF34 /* transform.inl */,
+				1B6DF1AC2608C9400078DF34 /* bit.inl */,
+				1B6DF1AD2608C9400078DF34 /* io.inl */,
+				1B6DF1AE2608C9400078DF34 /* fast_trigonometry.inl */,
+				1B6DF1AF2608C9400078DF34 /* optimum_pow.hpp */,
+				1B6DF1B02608C9400078DF34 /* spline.inl */,
+				1B6DF1B12608C9400078DF34 /* raw_data.hpp */,
+				1B6DF1B22608C9400078DF34 /* matrix_cross_product.hpp */,
+				1B6DF1B32608C9400078DF34 /* euler_angles.hpp */,
+				1B6DF1B42608C9400078DF34 /* fast_square_root.inl */,
+				1B6DF1B52608C9400078DF34 /* color_space_YCoCg.inl */,
+				1B6DF1B62608C9400078DF34 /* type_trait.hpp */,
+				1B6DF1B72608C9400078DF34 /* extended_min_max.inl */,
+				1B6DF1B82608C9400078DF34 /* io.hpp */,
+				1B6DF1B92608C9400078DF34 /* float_notmalize.inl */,
+				1B6DF1BA2608C9400078DF34 /* transform.hpp */,
+				1B6DF1BB2608C9400078DF34 /* bit.hpp */,
+				1B6DF1BC2608C9400078DF34 /* number_precision.hpp */,
+				1B6DF1BD2608C9400078DF34 /* mixed_product.hpp */,
+				1B6DF1BE2608C9400078DF34 /* closest_point.inl */,
+				1B6DF1BF2608C9400078DF34 /* quaternion_gtx.inl */,
+				1B6DF1C02608C9400078DF34 /* dual_quaternion.inl */,
+				1B6DF1C12608C9400078DF34 /* associated_min_max.hpp */,
+				1B6DF1C22608C9400078DF34 /* matrix_transform_2d.hpp */,
+				1B6DF1C32608C9400078DF34 /* log_base.hpp */,
+				1B6DF1C42608C9400078DF34 /* matrix_query.hpp */,
+				1B6DF1C52608C9400078DF34 /* vector_angle.inl */,
+				1B6DF1C62608C9400078DF34 /* extend.hpp */,
+				1B6DF1C72608C9400078DF34 /* gradient_paint.hpp */,
+				1B6DF1C82608C9400078DF34 /* quaternion.hpp */,
+				1B6DF1C92608C9400078DF34 /* exterior_product.hpp */,
+				1B6DF1CA2608C9400078DF34 /* string_cast.inl */,
+				1B6DF1CB2608C9400078DF34 /* functions.inl */,
+				1B6DF1CC2608C9400078DF34 /* rotate_vector.inl */,
+				1B6DF1CD2608C9400078DF34 /* matrix_interpolation.inl */,
+				1B6DF1CE2608C9400078DF34 /* integer_gtx.inl */,
+				1B6DF1CF2608C9400078DF34 /* hash.inl */,
+				1B6DF1D02608C9400078DF34 /* vector_query.inl */,
+				1B6DF1D12608C9400078DF34 /* polar_coordinates.hpp */,
+				1B6DF1D22608C9400078DF34 /* orthonormalize.inl */,
+				1B6DF1D32608C9400078DF34 /* component_wise.inl */,
+				1B6DF1D42608C9400078DF34 /* normalize_dot.inl */,
+				1B6DF1D52608C9400078DF34 /* std_based_type.inl */,
+				1B6DF1D62608C9400078DF34 /* matrix_factorisation.inl */,
+				1B6DF1D72608C9400078DF34 /* type_aligned.inl */,
+				1B6DF1D82608C9400078DF34 /* vec_swizzle.hpp */,
+				1B6DF1D92608C9400078DF34 /* projection.hpp */,
+				1B6DF1DA2608C9400078DF34 /* compatibility.inl */,
+				1B6DF1DB2608C9400078DF34 /* scalar_relational.hpp */,
+				1B6DF1DC2608C9400078DF34 /* wrap.hpp */,
+				1B6DF1DD2608C9400078DF34 /* scalar_relational_gtx.inl */,
+				1B6DF1DE2608C9400078DF34 /* rotate_normalized_axis.inl */,
+				1B6DF1DF2608C9400078DF34 /* texture.hpp */,
+				1B6DF1E02608C9400078DF34 /* color_encoding.inl */,
+				1B6DF1E12608C9400078DF34 /* norm.hpp */,
+				1B6DF1E22608C9400078DF34 /* matrix_major_storage.inl */,
+				1B6DF1E32608C9400078DF34 /* matrix_operation.inl */,
+				1B6DF1E42608C9400078DF34 /* color_space.hpp */,
+				1B6DF1E52608C9400078DF34 /* normal.hpp */,
+				1B6DF1E62608C9400078DF34 /* intersect.inl */,
+				1B6DF1E72608C9400078DF34 /* perpendicular.inl */,
+				1B6DF1E82608C9400078DF34 /* easing.hpp */,
+				1B6DF1E92608C9400078DF34 /* transform2.inl */,
+				1B6DF1EA2608C9400078DF34 /* matrix_decompose.hpp */,
+				1B6DF1EB2608C9400078DF34 /* fast_exponential.hpp */,
+				1B6DF1EC2608C9400078DF34 /* common.inl */,
+				1B6DF1ED2608C9400078DF34 /* handed_coordinate_space.hpp */,
+				1B6DF1EE2608C9400078DF34 /* intersect.hpp */,
+				1B6DF1EF2608C9400078DF34 /* perpendicular.hpp */,
+				1B6DF1F02608C9400078DF34 /* easing.inl */,
+				1B6DF1F12608C9400078DF34 /* matrix_operation.hpp */,
+				1B6DF1F22608C9400078DF34 /* normal.inl */,
+				1B6DF1F32608C9400078DF34 /* color_encoding.hpp */,
+				1B6DF1F42608C9400078DF34 /* matrix_major_storage.hpp */,
+				1B6DF1F52608C9400078DF34 /* norm.inl */,
+				1B6DF1F62608C9400078DF34 /* texture.inl */,
+				1B6DF1F72608C9400078DF34 /* handed_coordinate_space.inl */,
+				1B6DF1F82608C9400078DF34 /* common.hpp */,
+				1B6DF1F92608C9400078DF34 /* range.hpp */,
+				1B6DF1FA2608C9400078DF34 /* fast_exponential.inl */,
+				1B6DF1FB2608C9400078DF34 /* transform2.hpp */,
+				1B6DF1FC2608C9400078DF34 /* matrix_decompose.inl */,
+				1B6DF1FD2608C9400078DF34 /* scalar_multiplication.hpp */,
+				1B6DF1FE2608C9400078DF34 /* std_based_type.hpp */,
+				1B6DF1FF2608C9400078DF34 /* matrix_factorisation.hpp */,
+				1B6DF2002608C9400078DF34 /* orthonormalize.hpp */,
+				1B6DF2012608C9400078DF34 /* normalize_dot.hpp */,
+				1B6DF2022608C9400078DF34 /* component_wise.hpp */,
+				1B6DF2032608C9400078DF34 /* polar_coordinates.inl */,
+				1B6DF2042608C9400078DF34 /* vector_query.hpp */,
+				1B6DF2052608C9400078DF34 /* wrap.inl */,
+				1B6DF2062608C9400078DF34 /* compatibility.hpp */,
+				1B6DF2072608C9400078DF34 /* rotate_normalized_axis.hpp */,
+				1B6DF2082608C9400078DF34 /* color_space_gtx.inl */,
+				1B6DF2092608C9400078DF34 /* projection.inl */,
+				1B6DF20A2608C9400078DF34 /* type_aligned.hpp */,
+			);
+			path = gtx;
+			sourceTree = "<group>";
+		};
+		1B6DF2962608C9BB0078DF34 /* assimp */ = {
+			isa = PBXGroup;
+			children = (
+				1B6DF2992608C9F80078DF34 /* libassimp-fat.a */,
+				1B6DF2982608C9E80078DF34 /* libIrrXML-fat.a */,
+				1B6DF2972608C9E80078DF34 /* libzlibstatic-fat.a */,
+				1B6DF29D2608CA0A0078DF34 /* assimp */,
+			);
+			path = assimp;
+			sourceTree = "<group>";
+		};
+		1B6DF29D2608CA0A0078DF34 /* assimp */ = {
+			isa = PBXGroup;
+			children = (
+				1B6DF29E2608CA0A0078DF34 /* ByteSwapper.h */,
+				1B6DF29F2608CA0A0078DF34 /* IOSystem.hpp */,
+				1B6DF2A02608CA0A0078DF34 /* StreamReader.h */,
+				1B6DF2A12608CA0A0078DF34 /* Logger.hpp */,
+				1B6DF2A22608CA0A0078DF34 /* IOStream.hpp */,
+				1B6DF2A32608CA0A0078DF34 /* SkeletonMeshBuilder.h */,
+				1B6DF2A42608CA0A0078DF34 /* Vertex.h */,
+				1B6DF2A52608CA0A0078DF34 /* quaternion.inl */,
+				1B6DF2A62608CA0A0078DF34 /* defs.h */,
+				1B6DF2A72608CA0A0078DF34 /* Subdivision.h */,
+				1B6DF2A82608CA0A0078DF34 /* ParsingUtils.h */,
+				1B6DF2A92608CA0A0078DF34 /* version.h */,
+				1B6DF2AA2608CA0A0078DF34 /* XMLTools.h */,
+				1B6DF2AB2608CA0A0078DF34 /* StringComparison.h */,
+				1B6DF2AC2608CA0A0078DF34 /* matrix4x4.h */,
+				1B6DF2AD2608CA0A0078DF34 /* Importer.hpp */,
+				1B6DF2AE2608CA0A0078DF34 /* cfileio.h */,
+				1B6DF2AF2608CA0A0078DF34 /* GenericProperty.h */,
+				1B6DF2B02608CA0A0078DF34 /* RemoveComments.h */,
+				1B6DF2B12608CA0A0078DF34 /* vector2.h */,
+				1B6DF2B22608CA0A0078DF34 /* config.h */,
+				1B6DF2B32608CA0A0078DF34 /* light.h */,
+				1B6DF2B42608CA0A0078DF34 /* types.h */,
+				1B6DF2B52608CA0A0078DF34 /* irrXMLWrapper.h */,
+				1B6DF2B62608CA0A0078DF34 /* MathFunctions.h */,
+				1B6DF2B72608CA0A0078DF34 /* cimport.h */,
+				1B6DF2B82608CA0A0078DF34 /* camera.h */,
+				1B6DF2B92608CA0A0078DF34 /* matrix3x3.h */,
+				1B6DF2BA2608CA0A0078DF34 /* color4.inl */,
+				1B6DF2BB2608CA0A0078DF34 /* StringUtils.h */,
+				1B6DF2BC2608CA0A0078DF34 /* DefaultIOStream.h */,
+				1B6DF2BD2608CA0A0078DF34 /* BaseImporter.h */,
+				1B6DF2BE2608CA0A0078DF34 /* SceneCombiner.h */,
+				1B6DF2BF2608CA0A0078DF34 /* material.h */,
+				1B6DF2C02608CA0A0078DF34 /* ai_assert.h */,
+				1B6DF2C12608CA0A0078DF34 /* NullLogger.hpp */,
+				1B6DF2C22608CA0A0078DF34 /* SmoothingGroups.h */,
+				1B6DF2C32608CA0A0078DF34 /* quaternion.h */,
+				1B6DF2C42608CA0A0078DF34 /* LogAux.h */,
+				1B6DF2C52608CA0A0078DF34 /* config.h.in */,
+				1B6DF2C62608CA0A0078DF34 /* DefaultLogger.hpp */,
+				1B6DF2C72608CA0A0078DF34 /* material.inl */,
+				1B6DF2C82608CA0A0078DF34 /* metadata.h */,
+				1B6DF2C92608CA0A0078DF34 /* mesh.h */,
+				1B6DF2CA2608CA0A0078DF34 /* LineSplitter.h */,
+				1B6DF2CB2608CA0A0078DF34 /* CreateAnimMesh.h */,
+				1B6DF2CC2608CA0A0078DF34 /* Defines.h */,
+				1B6DF2CD2608CA0A0078DF34 /* .editorconfig */,
+				1B6DF2CE2608CA0A0078DF34 /* SpatialSort.h */,
+				1B6DF2CF2608CA0A0078DF34 /* MemoryIOWrapper.h */,
+				1B6DF2D02608CA0A0078DF34 /* Exporter.hpp */,
+				1B6DF2D12608CA0A0078DF34 /* vector2.inl */,
+				1B6DF2D22608CA0A0078DF34 /* matrix4x4.inl */,
+				1B6DF2D32608CA0A0078DF34 /* vector3.inl */,
+				1B6DF2D42608CA0A0078DF34 /* Macros.h */,
+				1B6DF2D52608CA0A0078DF34 /* ProgressHandler.hpp */,
+				1B6DF2D62608CA0A0078DF34 /* cexport.h */,
+				1B6DF2D72608CA0A0078DF34 /* StreamWriter.h */,
+				1B6DF2D82608CA0A0078DF34 /* color4.h */,
+				1B6DF2D92608CA0A0078DF34 /* StandardShapes.h */,
+				1B6DF2DA2608CA0A0078DF34 /* pbrmaterial.h */,
+				1B6DF2DB2608CA0A0078DF34 /* fast_atof.h */,
+				1B6DF2DC2608CA0A0078DF34 /* anim.h */,
+				1B6DF2DD2608CA0A0078DF34 /* postprocess.h */,
+				1B6DF2DE2608CA0A0078DF34 /* Exceptional.h */,
+				1B6DF2DF2608CA0A0078DF34 /* texture.h */,
+				1B6DF2E02608CA0A0078DF34 /* ZipArchiveIOSystem.h */,
+				1B6DF2E12608CA0A0078DF34 /* BlobIOSystem.h */,
+				1B6DF2E22608CA0A0078DF34 /* matrix3x3.inl */,
+				1B6DF2E32608CA0A0078DF34 /* qnan.h */,
+				1B6DF2E42608CA0A0078DF34 /* port */,
+				1B6DF2E72608CA0A0078DF34 /* Profiler.h */,
+				1B6DF2E82608CA0A0078DF34 /* Bitmap.h */,
+				1B6DF2E92608CA0A0078DF34 /* importerdesc.h */,
+				1B6DF2EA2608CA0A0078DF34 /* TinyFormatter.h */,
+				1B6DF2EB2608CA0A0078DF34 /* Compiler */,
+				1B6DF2EF2608CA0A0078DF34 /* IOStreamBuffer.h */,
+				1B6DF2F02608CA0A0078DF34 /* Hash.h */,
+				1B6DF2F12608CA0A0078DF34 /* SGSpatialSort.h */,
+				1B6DF2F22608CA0A0078DF34 /* aabb.h */,
+				1B6DF2F32608CA0A0078DF34 /* SmoothingGroups.inl */,
+				1B6DF2F42608CA0A0078DF34 /* vector3.h */,
+				1B6DF2F52608CA0A0078DF34 /* DefaultIOSystem.h */,
+				1B6DF2F62608CA0A0078DF34 /* scene.h */,
+				1B6DF2F72608CA0A0078DF34 /* LogStream.hpp */,
+			);
+			path = assimp;
+			sourceTree = "<group>";
+		};
+		1B6DF2E42608CA0A0078DF34 /* port */ = {
+			isa = PBXGroup;
+			children = (
+				1B6DF2E52608CA0A0078DF34 /* AndroidJNI */,
+			);
+			path = port;
+			sourceTree = "<group>";
+		};
+		1B6DF2E52608CA0A0078DF34 /* AndroidJNI */ = {
+			isa = PBXGroup;
+			children = (
+				1B6DF2E62608CA0A0078DF34 /* AndroidJNIIOSystem.h */,
+			);
+			path = AndroidJNI;
+			sourceTree = "<group>";
+		};
+		1B6DF2EB2608CA0A0078DF34 /* Compiler */ = {
+			isa = PBXGroup;
+			children = (
+				1B6DF2EC2608CA0A0078DF34 /* poppack1.h */,
+				1B6DF2ED2608CA0A0078DF34 /* pstdint.h */,
+				1B6DF2EE2608CA0A0078DF34 /* pushpack1.h */,
+			);
+			path = Compiler;
+			sourceTree = "<group>";
+		};
+		1B6DF3032608CA290078DF34 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1B6DF30C2608CB1A0078DF34 /* stb_image.cpp */,
+				1B6DF30D2608CB1A0078DF34 /* stb_image.h */,
+				1B6DF3042608CA360078DF34 /* Mesh.cpp */,
+				1B6DF3052608CA360078DF34 /* Mesh.hpp */,
+				1B6DF3062608CA370078DF34 /* Model.cpp */,
+				1B6DF3072608CA370078DF34 /* Model.hpp */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1B6DF310260992AC0078DF34 /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				1B6DF312260992BE0078DF34 /* Camera.cpp */,
+				1B6DF311260992BE0078DF34 /* Camera.hpp */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1B6DF0652608C8C90078DF34 /* ModelRead */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1B6DF07F2608C8CC0078DF34 /* Build configuration list for PBXNativeTarget "ModelRead" */;
+			buildPhases = (
+				1B6DF0622608C8C90078DF34 /* Sources */,
+				1B6DF0632608C8C90078DF34 /* Frameworks */,
+				1B6DF0642608C8C90078DF34 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ModelRead;
+			productName = ModelRead;
+			productReference = 1B6DF0662608C8C90078DF34 /* ModelRead.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1B6DF05E2608C8C90078DF34 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					1B6DF0652608C8C90078DF34 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = 1B6DF0612608C8C90078DF34 /* Build configuration list for PBXProject "ModelRead" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1B6DF05D2608C8C90078DF34;
+			productRefGroup = 1B6DF0672608C8C90078DF34 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1B6DF0652608C8C90078DF34 /* ModelRead */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1B6DF0642608C8C90078DF34 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B6DF24B2608C9400078DF34 /* quaternion_simd.inl in Resources */,
+				1B6DF24C2608C9400078DF34 /* ulp.inl in Resources */,
+				1B6DF2492608C9400078DF34 /* bitfield.inl in Resources */,
+				1B6DF27A2608C9400078DF34 /* component_wise.inl in Resources */,
+				1B6DF2552608C9400078DF34 /* constants.inl in Resources */,
+				1B6DF2FC2608CA0A0078DF34 /* .editorconfig in Resources */,
+				1B6DF37B2609E2AA0078DF34 /* main.obj in Resources */,
+				1B6DF2432608C9400078DF34 /* type_mat3x2.inl in Resources */,
+				1B6DF2362608C9400078DF34 /* type_vec1.inl in Resources */,
+				1B6DF2272608C9400078DF34 /* type_half.inl in Resources */,
+				1B6DF2722608C9400078DF34 /* string_cast.inl in Resources */,
+				1B6DF2112608C9400078DF34 /* scalar_integer.inl in Resources */,
+				1B6DF2162608C9400078DF34 /* quaternion_common_simd.inl in Resources */,
+				1B6DF2912608C9410078DF34 /* wrap.inl in Resources */,
+				1B6DF27B2608C9400078DF34 /* normalize_dot.inl in Resources */,
+				1B6DF24E2608C9400078DF34 /* integer_gtc.inl in Resources */,
+				1B6DF20C2608C9400078DF34 /* CMakeLists.txt in Resources */,
+				1B6DF2282608C9400078DF34 /* func_vector_relational_simd.inl in Resources */,
+				1B6DF28B2608C9400078DF34 /* norm.inl in Resources */,
+				1B6DF2852608C9400078DF34 /* intersect.inl in Resources */,
+				1B6DF27D2608C9400078DF34 /* matrix_factorisation.inl in Resources */,
+				1B6DF24A2608C9400078DF34 /* round.inl in Resources */,
+				1B6DF2562608C9400078DF34 /* type_ptr.inl in Resources */,
+				1B6DF2342608C9400078DF34 /* func_trigonometric_simd.inl in Resources */,
+				1B6DF2792608C9400078DF34 /* orthonormalize.inl in Resources */,
+				1B6DF2682608C9400078DF34 /* fast_trigonometry.inl in Resources */,
+				1B6DF2932608C9410078DF34 /* projection.inl in Resources */,
+				1B6DF2FF2608CA0A0078DF34 /* vector3.inl in Resources */,
+				1B6DF2702608C9400078DF34 /* dual_quaternion.inl in Resources */,
+				1B6DF22F2608C9400078DF34 /* type_mat2x4.inl in Resources */,
+				1B6DF2622608C9400078DF34 /* optimum_pow.inl in Resources */,
+				1B6DF2602608C9400078DF34 /* raw_data.inl in Resources */,
+				1B6DF2FE2608CA0A0078DF34 /* matrix4x4.inl in Resources */,
+				1B6DF37A2609E2AA0078DF34 /* main.mtl in Resources */,
+				1B6DF2652608C9400078DF34 /* transform.inl in Resources */,
+				1B6DF2812608C9400078DF34 /* rotate_normalized_axis.inl in Resources */,
+				1B6DF21E2608C9400078DF34 /* scalar_ulp.inl in Resources */,
+				1B6DF2F82608CA0A0078DF34 /* quaternion.inl in Resources */,
+				1B6DF21D2608C9400078DF34 /* matrix_transform_ext.inl in Resources */,
+				1B6DF22B2608C9400078DF34 /* func_geometric.inl in Resources */,
+				1B6DF2752608C9400078DF34 /* matrix_interpolation.inl in Resources */,
+				1B6DF22C2608C9400078DF34 /* func_common.inl in Resources */,
+				1B6DF2822608C9400078DF34 /* color_encoding.inl in Resources */,
+				1B6DF2FA2608CA0A0078DF34 /* config.h.in in Resources */,
+				1B6DF3512609C0810078DF34 /* sphere.frag in Resources */,
+				1B6DF26B2608C9400078DF34 /* color_space_YCoCg.inl in Resources */,
+				1B6DF2582608C9400078DF34 /* matrix_query.inl in Resources */,
+				1B6DF2322608C9400078DF34 /* func_packing_simd.inl in Resources */,
+				1B6DF0792608C8CC0078DF34 /* LaunchScreen.storyboard in Resources */,
+				1B6DF2522608C9400078DF34 /* matrix_transform_gtc.inl in Resources */,
+				1B6DF2292608C9400078DF34 /* func_matrix_simd.inl in Resources */,
+				1B6DF3522609C0810078DF34 /* sphere.vert in Resources */,
+				1B6DF2152608C9400078DF34 /* scalar_relational_ext.inl in Resources */,
+				1B6DF25A2608C9400078DF34 /* associated_min_max.inl in Resources */,
+				1B6DF23F2608C9400078DF34 /* func_matrix.inl in Resources */,
+				1B6DF2FD2608CA0A0078DF34 /* vector2.inl in Resources */,
+				1B6DF3012608CA0A0078DF34 /* SmoothingGroups.inl in Resources */,
+				1B6DF2882608C9400078DF34 /* common.inl in Resources */,
+				1B6DF23E2608C9400078DF34 /* type_mat4x4_simd.inl in Resources */,
+				1B6DF28D2608C9400078DF34 /* handed_coordinate_space.inl in Resources */,
+				1B6DF34C2609BF0C0078DF34 /* glsl.frag in Resources */,
+				1B6DF2F92608CA0A0078DF34 /* color4.inl in Resources */,
+				1B6DF20F2608C9400078DF34 /* quaternion_transform.inl in Resources */,
+				1B6DF23B2608C9400078DF34 /* type_vec2.inl in Resources */,
+				1B6DF2572608C9400078DF34 /* log_base.inl in Resources */,
+				1B6DF21C2608C9400078DF34 /* quaternion_relational.inl in Resources */,
+				1B6DF2352608C9400078DF34 /* type_mat2x2.inl in Resources */,
+				1B6DF2382608C9400078DF34 /* type_mat4x4.inl in Resources */,
+				1B6DF21A2608C9400078DF34 /* quaternion_trigonometric.inl in Resources */,
+				1B6DF25D2608C9400078DF34 /* gradient_paint.inl in Resources */,
+				1B6DF2132608C9400078DF34 /* scalar_common.inl in Resources */,
+				1B6DF2862608C9400078DF34 /* perpendicular.inl in Resources */,
+				1B6DF2222608C9400078DF34 /* func_exponential.inl in Resources */,
+				1B6DF2412608C9400078DF34 /* type_mat3x4.inl in Resources */,
+				1B6DF2542608C9400078DF34 /* random.inl in Resources */,
+				1B6DF2532608C9400078DF34 /* noise.inl in Resources */,
+				1B6DF23D2608C9400078DF34 /* type_vec3.inl in Resources */,
+				1B6DF2642608C9400078DF34 /* mixed_product.inl in Resources */,
+				1B6DF3552609C1630078DF34 /* planet.obj in Resources */,
+				1B6DF2212608C9400078DF34 /* matrix_relational.inl in Resources */,
+				1B6DF2802608C9400078DF34 /* scalar_relational_gtx.inl in Resources */,
+				1B6DF2462608C9400078DF34 /* matrix_inverse.inl in Resources */,
+				1B6DF28F2608C9400078DF34 /* matrix_decompose.inl in Resources */,
+				1B6DF2312608C9400078DF34 /* type_mat4x3.inl in Resources */,
+				1B6DF2202608C9400078DF34 /* vector_integer.inl in Resources */,
+				1B6DF2662608C9400078DF34 /* bit.inl in Resources */,
+				1B6DF2402608C9400078DF34 /* type_vec4_simd.inl in Resources */,
+				1B6DF24D2608C9400078DF34 /* epsilon.inl in Resources */,
+				1B6DF2442608C9400078DF34 /* type_mat3x3.inl in Resources */,
+				1B6DF34D2609BF0C0078DF34 /* glsl.vert in Resources */,
+				1B6DF2FB2608CA0A0078DF34 /* material.inl in Resources */,
+				1B6DF20D2608C9400078DF34 /* quaternion_common.inl in Resources */,
+				1B6DF2742608C9400078DF34 /* rotate_vector.inl in Resources */,
+				1B6DF25F2608C9400078DF34 /* euler_angles.inl in Resources */,
+				1B6DF22E2608C9400078DF34 /* func_trigonometric.inl in Resources */,
+				1B6DF25C2608C9400078DF34 /* exterior_product.inl in Resources */,
+				1B6DF2772608C9400078DF34 /* hash.inl in Resources */,
+				1B6DF27C2608C9400078DF34 /* std_based_type.inl in Resources */,
+				1B6DF2392608C9400078DF34 /* func_geometric_simd.inl in Resources */,
+				1B6DF2922608C9410078DF34 /* color_space_gtx.inl in Resources */,
+				1B6DF2842608C9400078DF34 /* matrix_operation.inl in Resources */,
+				1B6DF2592608C9400078DF34 /* extend.inl in Resources */,
+				1B6DF3002608CA0A0078DF34 /* matrix3x3.inl in Resources */,
+				1B6DF2732608C9400078DF34 /* functions.inl in Resources */,
+				1B6DF2242608C9400078DF34 /* func_vector_relational.inl in Resources */,
+				1B6DF0762608C8CC0078DF34 /* Assets.xcassets in Resources */,
+				1B6DF2712608C9400078DF34 /* vector_angle.inl in Resources */,
+				1B6DF2762608C9400078DF34 /* integer_gtx.inl in Resources */,
+				1B6DF2452608C9400078DF34 /* color_space_gtc.inl in Resources */,
+				1B6DF2102608C9400078DF34 /* matrix_clip_space.inl in Resources */,
+				1B6DF2192608C9400078DF34 /* matrix_projection.inl in Resources */,
+				1B6DF26D2608C9400078DF34 /* float_notmalize.inl in Resources */,
+				1B6DF2172608C9400078DF34 /* scalar_constants.inl in Resources */,
+				1B6DF2262608C9400078DF34 /* type_quat.inl in Resources */,
+				1B6DF0742608C8C90078DF34 /* Main.storyboard in Resources */,
+				1B6DF2692608C9400078DF34 /* spline.inl in Resources */,
+				1B6DF2782608C9400078DF34 /* vector_query.inl in Resources */,
+				1B6DF22D2608C9400078DF34 /* type_quat_simd.inl in Resources */,
+				1B6DF28A2608C9400078DF34 /* normal.inl in Resources */,
+				1B6DF21F2608C9400078DF34 /* quaternion_geometric.inl in Resources */,
+				1B6DF2422608C9400078DF34 /* func_exponential_simd.inl in Resources */,
+				1B6DF2372608C9400078DF34 /* func_common_simd.inl in Resources */,
+				1B6DF2872608C9400078DF34 /* transform2.inl in Resources */,
+				1B6DF24F2608C9400078DF34 /* matrix_access.inl in Resources */,
+				1B6DF27F2608C9400078DF34 /* compatibility.inl in Resources */,
+				1B6DF20E2608C9400078DF34 /* quaternion_exponential.inl in Resources */,
+				1B6DF2232608C9400078DF34 /* func_integer_simd.inl in Resources */,
+				1B6DF28C2608C9400078DF34 /* texture.inl in Resources */,
+				1B6DF2632608C9400078DF34 /* number_precision.inl in Resources */,
+				1B6DF2902608C9400078DF34 /* polar_coordinates.inl in Resources */,
+				1B6DF2502608C9400078DF34 /* reciprocal.inl in Resources */,
+				1B6DF2302608C9400078DF34 /* type_mat4x2.inl in Resources */,
+				1B6DF26C2608C9400078DF34 /* extended_min_max.inl in Resources */,
+				1B6DF26A2608C9400078DF34 /* fast_square_root.inl in Resources */,
+				1B6DF2472608C9400078DF34 /* packing.inl in Resources */,
+				1B6DF2832608C9400078DF34 /* matrix_major_storage.inl in Resources */,
+				1B6DF26E2608C9400078DF34 /* closest_point.inl in Resources */,
+				1B6DF2512608C9400078DF34 /* quaternion_gtc.inl in Resources */,
+				1B6DF2252608C9400078DF34 /* func_packing.inl in Resources */,
+				1B6DF28E2608C9400078DF34 /* fast_exponential.inl in Resources */,
+				1B6DF25E2608C9400078DF34 /* type_trait.inl in Resources */,
+				1B6DF2892608C9400078DF34 /* easing.inl in Resources */,
+				1B6DF2182608C9400078DF34 /* vector_common.inl in Resources */,
+				1B6DF2612608C9400078DF34 /* matrix_cross_product.inl in Resources */,
+				1B6DF21B2608C9400078DF34 /* vector_ulp.inl in Resources */,
+				1B6DF25B2608C9400078DF34 /* matrix_transform_2d.inl in Resources */,
+				1B6DF2122608C9400078DF34 /* matrix_common.inl in Resources */,
+				1B6DF23A2608C9400078DF34 /* type_mat2x3.inl in Resources */,
+				1B6DF22A2608C9400078DF34 /* func_integer.inl in Resources */,
+				1B6DF2482608C9400078DF34 /* type_precision.inl in Resources */,
+				1B6DF2672608C9400078DF34 /* io.inl in Resources */,
+				1B6DF2142608C9400078DF34 /* vector_relational.inl in Resources */,
+				1B6DF2332608C9400078DF34 /* type_vec4.inl in Resources */,
+				1B6DF27E2608C9400078DF34 /* type_aligned.inl in Resources */,
+				1B6DF26F2608C9400078DF34 /* quaternion_gtx.inl in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1B6DF0622608C8C90078DF34 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B6DF23C2608C9400078DF34 /* glm.cpp in Sources */,
+				1B6DF0712608C8C90078DF34 /* ViewController.m in Sources */,
+				1B6DF313260992BE0078DF34 /* Camera.cpp in Sources */,
+				1B6DF06B2608C8C90078DF34 /* AppDelegate.m in Sources */,
+				1B6DF3092608CA370078DF34 /* Model.cpp in Sources */,
+				1B6DF3082608CA370078DF34 /* Mesh.cpp in Sources */,
+				1B6DF07C2608C8CC0078DF34 /* main.m in Sources */,
+				1B6DF3172609961C0078DF34 /* Sphere.mm in Sources */,
+				1B6DF30E2608CB1A0078DF34 /* stb_image.cpp in Sources */,
+				1B6DF06E2608C8C90078DF34 /* SceneDelegate.m in Sources */,
+				1B6DF20B2608C9400078DF34 /* Shader.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1B6DF0722608C8C90078DF34 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1B6DF0732608C8C90078DF34 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1B6DF0772608C8CC0078DF34 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1B6DF0782608C8CC0078DF34 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1B6DF07D2608C8CC0078DF34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1B6DF07E2608C8CC0078DF34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1B6DF0802608C8CC0078DF34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WU2WFZ2B66;
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/ModelRead/Opengl",
+					"$(SRCROOT)/ModelRead/Opengl/assimp",
+				);
+				INFOPLIST_FILE = ModelRead/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ModelRead/Opengl/assimp",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Het.ModelRead;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1B6DF0812608C8CC0078DF34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WU2WFZ2B66;
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/ModelRead/Opengl",
+					"$(SRCROOT)/ModelRead/Opengl/assimp",
+				);
+				INFOPLIST_FILE = ModelRead/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ModelRead/Opengl/assimp",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Het.ModelRead;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1B6DF0612608C8C90078DF34 /* Build configuration list for PBXProject "ModelRead" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B6DF07D2608C8CC0078DF34 /* Debug */,
+				1B6DF07E2608C8CC0078DF34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1B6DF07F2608C8CC0078DF34 /* Build configuration list for PBXNativeTarget "ModelRead" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B6DF0802608C8CC0078DF34 /* Debug */,
+				1B6DF0812608C8CC0078DF34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1B6DF05E2608C8C90078DF34 /* Project object */;
+}
